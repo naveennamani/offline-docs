@@ -1,0 +1,39 @@
+- name: daisyui
+  website: https://daisyui.com
+  description: The most popular, free and open-source Tailwind CSS component library
+  repo: https://github.com/saadeghi/daisyui
+  commands:
+    - cd src/docs/
+    - npm install
+    - npm run build
+    - cd ../..
+  output_dir: daisyui/src/docs/build
+  last_tested: 2022-04-15
+  note: null
+  license: null
+- name: material ui
+  website: https://mui.com
+  description: >
+    MUI offers a comprehensive suite of UI tools to help you ship new features
+    faster.
+  repo: https://github.com/mui/material-ui/
+  commands:
+    - yarn
+    - yarn docs:build && yarn docs:export
+  output_dir: material-ui/docs/export
+  last_tested: 2022-04-15
+  note: null
+  license: null
+- name: tailwindcss
+  website: https://tailwindcss.com
+  description: >
+    Rapidly build modern websites without ever leaving your HTML. tailwindcss is
+    a utility first CSS framework.
+  repo: https://github.com/tailwindlabs/tailwindcss.com
+  commands:
+    - yarn install
+    - yarn export
+  output_dir: tailwindcss.com/out
+  last_tested: 2022-04-15
+  note: null
+  license: null

@@ -1,0 +1,19 @@
+- name: Blockchain
+  description: |
+    Tools, projects, frameworks related to blockchain development
+  data_file: blockchain.yml
+- name: Build tools
+  description: null
+  data_file: build_tools.yml
+- name: CSS frameworks/libraries
+  description: null
+  data_file: css.yml
+- name: Frontend javascript frameworks/libraries
+  description: null
+  data_file: frontend.yml
+- name: Javascript testing libraries
+  description: null
+  data_file: testing.yml
+- name: Other
+  description: All other uncategorized tools
+  data_file: other.yml

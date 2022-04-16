@@ -1,0 +1,24 @@
+- name: reactjs
+  website: https://reactjs.org
+  description: Do you really need an introduction to reactjs?
+  repo: https://github.com/reactjs/reactjs.org
+  commands:
+    - yarn install
+    - yarn build
+  output_dir: reactjs.org/public
+  last_tested: 2022-04-15
+  note: null
+  license: null
+- name: vuejs V3
+  website: https://v3.vuejs.org
+  description: >
+    The Progressive JavaScript Framework. An approachable, performant and
+    versatile framework for building web user interfaces.
+  repo: https://github.com/vuejs/docs
+  commands:
+    - npm i -g pnpm
+    - npx pnpm i --store=node_modules/.pnpm-store && npm run ci-docs
+  output_dir: docs/.vitepress/dist
+  last_tested: 2022-04-15
+  note: null
+  license: null

@@ -1,0 +1,32 @@
+{
+  "name": "offline-docs",
+  "version": "1.0.0",
+  "description": "A collection of scripts to generate offline documentation for your favourite frameworks/libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveennamani/offline-docs.git"
+  },
+  "keywords": [
+    "documentation",
+    "offline",
+    "javascript",
+    "nodejs",
+    "npm",
+    "python"
+  ],
+  "author": "Naveen Namani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naveennamani/offline-docs/issues"
+  },
+  "homepage": "https://github.com/naveennamani/offline-docs#readme",
+  "type": "module",
+  "dependencies": {
+    "markdown-toc": "^1.2.0",
+    "yaml": "^1.10.2"
+  }
+}

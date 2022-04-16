@@ -1,0 +1,28 @@
+- name: ethereum
+  website: https://ethereum.org/en/
+  description: >
+    Ethereum is a technology that's home to digital money, global payments, and
+    applications.
+  repo: https://github.com/ethereum/ethereum-org-website
+  commands:
+    - npm install
+    - npx gatsby build
+  output_dir: ethereum-org-website/public
+  last_tested: 2022-04-15 (unable to completely build)
+  note: >
+    ethereum.org is really a very big website and statically building it will
+    require lot of CPU resouces as well as deep node_modules folder.
+  license: null
+- name: hardhat
+  website: https://hardhat.org
+  description: Ethereum development environment for professionals
+  repo: https://github.com/NomicFoundation/hardhat
+  commands:
+    - yarn install
+    - cd docs/
+    - sh build-site.sh
+    - cd ..
+  output_dir: hardhat/docs/.vuepress/dist
+  last_tested: 2022-04-15
+  note: null
+  license: null
