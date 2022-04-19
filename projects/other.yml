@@ -5,6 +5,7 @@
   commands:
     - npm install
     - npm run build
+  direct_links: []
   output_dir: website/_site
   last_tested: 2022-04-15
   note: null

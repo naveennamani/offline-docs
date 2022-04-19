@@ -16,7 +16,8 @@ export function cleanFile(fileName) {
         website,
         description,
         repo,
-        commands,
+        commands = [],
+        direct_links = [],
         output_dir,
         last_tested,
         note,
@@ -28,6 +29,7 @@ export function cleanFile(fileName) {
           description,
           repo,
           commands,
+          direct_links,
           output_dir,
           last_tested,
           note,
@@ -56,6 +58,5 @@ export function cleanAllDataFiles() {
   for (let project_group of project_groups) {
     cleanFile(resolve("projects", project_group));
   }
-
   cleanProjectGroups("project_groups.yml");
 }

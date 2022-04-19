@@ -1,6 +1,5 @@
 - name: Blockchain
-  description: |
-    Tools, projects, frameworks related to blockchain development
+  description: Tools, projects, frameworks related to blockchain development
   data_file: blockchain.yml
 - name: Build tools
   description: null

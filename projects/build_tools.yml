@@ -5,6 +5,7 @@
   commands:
     - npm i -g pnpm
     - npx pnpm i --store=node_modules/.pnpm-store && npm run ci-docs
+  direct_links: []
   output_dir: vite/docs/.vitepress/dist
   last_tested: 2022-04-15 (failed)
   note: null

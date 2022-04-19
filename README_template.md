@@ -3,6 +3,10 @@
 A collection of scripts to build offline documentation for your favourite
 frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
+## Available tools
+
+<!-- toc -->
+
 ## But why? / Motivation
 
 Learning or working on a new language often requires referring to the official
@@ -50,10 +54,6 @@ Open an issue with as detailed error messages as possible.
    [serve (npm package)](https://www.npmjs.com/package/serve) or simply
    `python -m http.server`. (We recommend using serve package)
 
-## Available tools
-
-<!-- toc -->
-
 <!-- content -->
 
 ---
@@ -62,7 +62,6 @@ Open an issue with as detailed error messages as possible.
 
 - [ ] Auto update of README.md on push to main
 - [ ] Mozilla Developer Network
-- [ ] windicss
 
 ---
 

@@ -1,28 +1,71 @@
 - name: ethereum
   website: https://ethereum.org/en/
-  description: >
-    Ethereum is a technology that's home to digital money, global payments, and
-    applications.
+  description: Ethereum is a technology that's home to digital money, global
+    payments, and applications.
   repo: https://github.com/ethereum/ethereum-org-website
   commands:
     - npm install
     - npx gatsby build
+  direct_links: []
   output_dir: ethereum-org-website/public
   last_tested: 2022-04-15 (unable to completely build)
-  note: >
-    ethereum.org is really a very big website and statically building it will
+  note: ethereum.org is really a very big website and statically building it will
     require lot of CPU resouces as well as deep node_modules folder.
   license: null
 - name: hardhat
   website: https://hardhat.org
-  description: Ethereum development environment for professionals
+  description: Ethereum development environment for professionals.
   repo: https://github.com/NomicFoundation/hardhat
   commands:
     - yarn install
     - cd docs/
     - sh build-site.sh
     - cd ..
+  direct_links: []
   output_dir: hardhat/docs/.vuepress/dist
   last_tested: 2022-04-15
+  note: null
+  license: null
+- name: solidity
+  website: https://docs.soliditylang.org/en/v0.8.13/
+  description: Solidity is an object-oriented, high-level language for
+    implementing smart contracts. Smart contracts are programs which govern the
+    behaviour of accounts within the Ethereum state.
+  repo: https://github.com/ethereum/solidity
+  commands:
+    - cd docs
+    - pip install -r requirements.txt
+    - make html
+    - cd ..
+  direct_links:
+    - text: Latest PDF
+      link: https://docs.soliditylang.org/_/downloads/en/latest/pdf/
+    - text: Latest HTML Zip
+      link: https://docs.soliditylang.org/_/downloads/en/latest/htmlzip/
+    - text: Latest EPUB
+      link: https://docs.soliditylang.org/_/downloads/en/latest/epub/
+  output_dir: solidity/docs/dist/html
+  last_tested: 2022-04-19
+  note: null
+  license: null
+- name: waffle
+  website: https://getwaffle.io
+  description: The most advanced framework for testing smart contracts. Sweeter,
+    simpler and faster.
+  repo: https://github.com/EthWorks/Waffle
+  commands:
+    - cd docs
+    - pip install -r requirements.txt
+    - make html
+    - cd ..
+  direct_links:
+    - text: Latest PDF
+      link: https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/pdf/
+    - text: Latest HTML Zip
+      link: https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/htmlzip/
+    - text: Latest EPUB
+      link: https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/epub/
+  output_dir: Waffle/docs/dist/html
+  last_tested: 2022-04-19
   note: null
   license: null

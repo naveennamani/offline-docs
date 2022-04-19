@@ -1,8 +1,7 @@
 - name: chaijs
   website: https://www.chaijs.com/
-  description: >
-    Chai is a BDD / TDD assertion library for node and the browser that can be
-    delightfully paired with any javascript testing framework.
+  description: Chai is a BDD / TDD assertion library for node and the browser that
+    can be delightfully paired with any javascript testing framework.
   repo: https://github.com/chaijs/chaijs.github.io
   commands:
     - npm install
@@ -11,19 +10,20 @@
     - bundle install
     - make generated_data
     - bundle exec jekyll build
+  direct_links: []
   output_dir: chaijs.github.io/_site
   last_tested: 2022-04-15
   note: null
   license: null
 - name: mochajs
   website: https://mochajs.org
-  description: >
-    Mocha is a feature-rich JavaScript test framework running on Node.js and in
-    the browser, making asynchronous testing simple and fun.
+  description: Mocha is a feature-rich JavaScript test framework running on
+    Node.js and in the browser, making asynchronous testing simple and fun.
   repo: https://github.com/mochajs/mocha
   commands:
     - npm install
     - npm run start docs.production
+  direct_links: []
   output_dir: mocha/docs/_site
   last_tested: 2022-04-15
   note: null
