@@ -5,6 +5,8 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
+- [Backend](#backend)
+  * [nodejs](#nodejs)
 - [Blockchain](#blockchain)
   * [ethereum](#ethereum)
   * [hardhat](#hardhat)
@@ -25,8 +27,13 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
   * [mochajs](#mochajs)
+- [Python](#python)
+  * [fastapi](#fastapi)
+  * [pydantic](#pydantic)
+  * [typer](#typer)
 - [Other](#other)
   * [eslint](#eslint)
+  * [prettier](#prettier)
 
 ## But why? / Motivation
 
@@ -74,6 +81,32 @@ Open an issue with as detailed error messages as possible.
 1. Use any static site serving tools like
    [serve (npm package)](https://www.npmjs.com/package/serve) or simply
    `python -m http.server`. (We recommend using serve package)
+
+# Backend
+
+## [nodejs](https://nodejs.org/en/)
+
+[Source code repo](https://github.com/nodejs/node)
+
+Javascript runtime built on Chrome's V8 JavaScript engine
+
+```sh
+git clone --depth=1 https://github.com/nodejs/node
+cd node
+./configure
+mkdir out/Release
+# Find out the location of the installed node binary
+which node
+# Copy the node binary to out/Release folder
+cp node out/Release
+make test-doc
+cd ..
+tar czf "nodejs.tar.gz" node/out/doc/api
+```
+
+Last tested on: 2022-04-23
+
+> Requires python and node installed.
 
 # Blockchain
 
@@ -184,7 +217,7 @@ cd ..
 tar czf "vite.tar.gz" vite/docs/.vitepress/dist
 ```
 
-Last tested on: 2022-04-15 (failed)
+Last tested on: 2022-04-23
 
 # CSS frameworks/libraries
 
@@ -335,6 +368,65 @@ tar czf "mochajs.tar.gz" mocha/docs/_site
 
 Last tested on: 2022-04-15
 
+# Python
+
+All python related libraries
+
+## [fastapi](https://fastapi.tiangolo.com/)
+
+[Source code repo](https://github.com/tiangolo/fastapi)
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+
+```sh
+git clone --depth=1 https://github.com/tiangolo/fastapi
+cd fastapi
+pip install flit
+flit install --user --extras doc
+sh scripts/build-docs.sh
+cd ..
+tar czf "fastapi.tar.gz" fastapi/site
+```
+
+Last tested on: 2022-04-23
+
+## [pydantic](https://pydantic-docs.helpmanual.io/)
+
+[Source code repo](https://github.com/samuelcolvin/pydantic)
+
+pydantic enforces type hints at runtime, and provides user friendly errors when data is invalid.
+
+```sh
+git clone --depth=1 https://github.com/samuelcolvin/pydantic
+cd pydantic
+make install-docs
+# Run the following line in case of errors with 'make docs'
+echo "def exec_examples(): return 0" > docs/build/exec_examples.py
+make docs
+cd ..
+tar czf "pydantic.tar.gz" pydantic/site
+```
+
+Last tested on: 2022-04-23
+
+## [typer](https://typer.tiangolo.com/)
+
+[Source code repo](https://github.com/tiangolo/typer)
+
+Typer is a library for building CLI applications that users will love using and developers will love creating. Based on Python 3.6+ type hints.
+
+```sh
+git clone --depth=1 https://github.com/tiangolo/typer
+cd typer
+pip install flit
+flit install --user --extras doc
+sh scripts/build-docs.sh
+cd ..
+tar czf "typer.tar.gz" typer/site
+```
+
+Last tested on: 2022-04-23
+
 # Other
 
 All other uncategorized tools
@@ -355,6 +447,23 @@ tar czf "eslint.tar.gz" website/_site
 ```
 
 Last tested on: 2022-04-15
+
+## [prettier](https://prettier.io)
+
+[Source code repo](https://github.com/prettier/prettier)
+
+Opinionated code formatter
+
+```sh
+git clone --depth=1 https://github.com/prettier/prettier
+cd prettier
+yarn install
+yarn build:website
+cd ..
+tar czf "prettier.tar.gz" prettier/website/build
+```
+
+Last tested on: 2022-04-23
 
 ---
 

@@ -1,0 +1,44 @@
+- name: fastapi
+  website: https://fastapi.tiangolo.com/
+  description: FastAPI is a modern, fast (high-performance), web framework for
+    building APIs with Python 3.6+ based on standard Python type hints.
+  repo: https://github.com/tiangolo/fastapi
+  commands:
+    - pip install flit
+    - flit install --user --extras doc
+    - sh scripts/build-docs.sh
+  direct_links: []
+  output_dir: fastapi/site
+  last_tested: 2022-04-23
+  note: null
+  license: null
+- name: pydantic
+  website: https://pydantic-docs.helpmanual.io/
+  description: pydantic enforces type hints at runtime, and provides user friendly
+    errors when data is invalid.
+  repo: https://github.com/samuelcolvin/pydantic
+  commands:
+    - make install-docs
+    - "# Run the following line in case of errors with 'make docs'"
+    - 'echo "def exec_examples(): return 0" > docs/build/exec_examples.py'
+    - make docs
+  direct_links: []
+  output_dir: pydantic/site
+  last_tested: 2022-04-23
+  note: null
+  license: null
+- name: typer
+  website: https://typer.tiangolo.com/
+  description: Typer is a library for building CLI applications that users will
+    love using and developers will love creating. Based on Python 3.6+ type
+    hints.
+  repo: https://github.com/tiangolo/typer
+  commands:
+    - pip install flit
+    - flit install --user --extras doc
+    - sh scripts/build-docs.sh
+  direct_links: []
+  output_dir: typer/site
+  last_tested: 2022-04-23
+  note: null
+  license: null

@@ -43,7 +43,9 @@ export function cleanFile(fileName) {
 export function cleanProjectGroups(fileName) {
   let projects = parse(readFileSync(fileName, { encoding: "utf8" }));
   let projects_sorted = projects
-    .sort((a, b) => (a.name < b.name ? -1 : 1)) // sort by name
+    .sort((a, b) =>
+      a.name == "Other" ? 1 : b.name == "Other" ? -1 : a.name < b.name ? -1 : 1
+    ) // sort by name and move Other to the end always
     .map(
       // sort keys in the object
       ({ name, description, data_file }) => {

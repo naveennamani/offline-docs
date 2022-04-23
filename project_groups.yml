@@ -1,3 +1,6 @@
+- name: Backend
+  description: null
+  data_file: backend.yml
 - name: Blockchain
   description: Tools, projects, frameworks related to blockchain development
   data_file: blockchain.yml
@@ -13,6 +16,9 @@
 - name: Javascript testing libraries
   description: null
   data_file: testing.yml
+- name: Python
+  description: All python related libraries
+  data_file: python.yml
 - name: Other
   description: All other uncategorized tools
   data_file: other.yml

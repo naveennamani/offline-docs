@@ -1,0 +1,17 @@
+- name: nodejs
+  website: https://nodejs.org/en/
+  description: Javascript runtime built on Chrome's V8 JavaScript engine
+  repo: https://github.com/nodejs/node
+  commands:
+    - ./configure
+    - mkdir out/Release
+    - "# Find out the location of the installed node binary"
+    - which node
+    - "# Copy the node binary to out/Release folder"
+    - cp node out/Release
+    - make test-doc
+  direct_links: []
+  output_dir: node/out/doc/api
+  last_tested: 2022-04-23
+  note: Requires python and node installed.
+  license: null

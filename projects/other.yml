@@ -10,3 +10,15 @@
   last_tested: 2022-04-15
   note: null
   license: null
+- name: prettier
+  website: https://prettier.io
+  description: Opinionated code formatter
+  repo: https://github.com/prettier/prettier
+  commands:
+    - yarn install
+    - yarn build:website
+  direct_links: []
+  output_dir: prettier/website/build
+  last_tested: 2022-04-23
+  note: null
+  license: null
