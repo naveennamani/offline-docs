@@ -1,0 +1,34 @@
+- name: Nuxtjs
+  website: https://nuxtjs.org
+  description: The Intuitive Vue Framework. Build your next Vue.js application
+    with confidence using Nuxt. An open source framework making web development
+    simple and powerful.
+  repo: https://github.com/nuxt/nuxtjs.org
+  commands:
+    - yarn install
+    - yarn build
+  direct_links: []
+  output_dir: nuxtjs.org/dist
+  last_tested: 2022-04-29
+  note: Due to the file name restrictions on windows, the build may not work
+    properly with client side hydration. Disable the javascript for best
+    experience.
+  license: null
+- name: Nuxtjs V3
+  website: https://v3.nuxtjs.org
+  description: The Intuitive Vue Framework. Build your next Vue.js application
+    with confidence using Nuxt. An open source framework making web development
+    simple and powerful.
+  repo: https://github.com/nuxt/framework
+  commands:
+    - cd docs
+    - yarn install
+    - yarn build:ci
+    - cd ..
+  direct_links: []
+  output_dir: framework/docs/dist
+  last_tested: 2022-04-29
+  note: Due to the file name restrictions on windows, the build may not work
+    properly with client side hydration. Disable the javascript for best
+    experience.
+  license: null

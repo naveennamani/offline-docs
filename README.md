@@ -5,6 +5,8 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
+Currently 27 tools available
+
 - [Backend](#backend)
   * [nodejs](#nodejs)
 - [Blockchain](#blockchain)
@@ -17,12 +19,18 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 - [Build tools](#build-tools)
   * [vite](#vite)
 - [CSS frameworks/libraries](#css-frameworkslibraries)
+  * [bootstrap 5](#bootstrap-5)
   * [daisyui](#daisyui)
   * [material ui](#material-ui)
   * [tailwindcss](#tailwindcss)
   * [windicss](#windicss)
+- [Cross platform app development](#cross-platform-app-development)
+  * [React Native](#react-native)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
+  * [react-redux](#react-redux)
   * [reactjs](#reactjs)
+  * [redux](#redux)
+  * [redux toolkit](#redux-toolkit)
   * [vuejs V3](#vuejs-v3)
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
@@ -31,9 +39,13 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
   * [fastapi](#fastapi)
   * [pydantic](#pydantic)
   * [typer](#typer)
+- [SSG, SSR](#ssg-ssr)
+  * [Nuxtjs](#nuxtjs)
+  * [Nuxtjs V3](#nuxtjs-v3)
 - [Other](#other)
   * [eslint](#eslint)
   * [prettier](#prettier)
+  * [typescript](#typescript)
 
 ## But why? / Motivation
 
@@ -221,6 +233,25 @@ Last tested on: 2022-04-23
 
 # CSS frameworks/libraries
 
+## [bootstrap 5](https://getbootstrap.com/)
+
+[Source code repo](https://github.com/twbs/bootstrap)
+
+The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
+
+```sh
+git clone --depth=1 https://github.com/twbs/bootstrap
+cd bootstrap
+npm install
+npm run docs-build
+cd ..
+tar czf "bootstrap 5.tar.gz" bootstrap/_site
+```
+
+Last tested on: 2022-04-23
+
+> Website of a css framework has broken css, I don't know?
+
 ## [daisyui](https://daisyui.com)
 
 [Source code repo](https://github.com/saadeghi/daisyui)
@@ -292,7 +323,49 @@ tar czf "windicss.tar.gz" docs/.vitepress/dist
 
 Last tested on: 2022-04-19
 
+# Cross platform app development
+
+Tools useful for development of crossplatform apps
+
+## [React Native](https://react-native.dev)
+
+[Source code repo](https://github.com/facebook/react-native-website)
+
+Create native apps for Android and iOS using React
+
+```sh
+git clone --depth=1 https://github.com/facebook/react-native-website
+cd react-native-website
+yarn install
+cd website
+yarn build
+cd ..
+cd ..
+tar czf "React Native.tar.gz" react-native=website/website/build
+```
+
+Last tested on: 2022-05-01
+
 # Frontend javascript frameworks/libraries
+
+## [react-redux](https://react-redux.js.org/)
+
+[Source code repo](https://github.com/reduxjs/react-redux)
+
+Official React bindings for Redux
+
+```sh
+git clone --depth=1 https://github.com/reduxjs/react-redux
+cd react-redux
+cd website
+npm install
+npm run build
+cd ..
+cd ..
+tar czf "react-redux.tar.gz" react-redux/website/build
+```
+
+Last tested on: 2022-04-30
 
 ## [reactjs](https://reactjs.org)
 
@@ -310,6 +383,44 @@ tar czf "reactjs.tar.gz" reactjs.org/public
 ```
 
 Last tested on: 2022-04-15
+
+## [redux](https://redux.js.org/)
+
+[Source code repo](https://github.com/reduxjs/redux)
+
+Redux is a predictable state container for JavaScript apps.
+
+```sh
+git clone --depth=1 https://github.com/reduxjs/redux
+cd redux
+cd website
+npm install
+npm run build
+cd ..
+cd ..
+tar czf "redux.tar.gz" redux/website/build
+```
+
+Last tested on: 2022-04-29
+
+## [redux toolkit](https://redux-toolkit.js.org/)
+
+[Source code repo](https://github.com/reduxjs/redux-toolkit)
+
+The official, opinionated, batteries-included toolset for efficient Redux development.
+
+```sh
+git clone --depth=1 https://github.com/reduxjs/redux-toolkit
+cd redux-toolkit
+cd website
+npm install
+npm run build
+cd ..
+cd ..
+tar czf "redux toolkit.tar.gz" redux-toolkit/website/build
+```
+
+Last tested on: 2022-04-30
 
 ## [vuejs V3](https://v3.vuejs.org)
 
@@ -427,6 +538,50 @@ tar czf "typer.tar.gz" typer/site
 
 Last tested on: 2022-04-23
 
+# SSG, SSR
+
+Frameworks like nextjs, nuxtjs used for generating static sites
+
+## [Nuxtjs](https://nuxtjs.org)
+
+[Source code repo](https://github.com/nuxt/nuxtjs.org)
+
+The Intuitive Vue Framework. Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful.
+
+```sh
+git clone --depth=1 https://github.com/nuxt/nuxtjs.org
+cd nuxtjs.org
+yarn install
+yarn build
+cd ..
+tar czf "Nuxtjs.tar.gz" nuxtjs.org/dist
+```
+
+Last tested on: 2022-04-29
+
+> Due to the file name restrictions on windows, the build may not work properly with client side hydration. Disable the javascript for best experience.
+
+## [Nuxtjs V3](https://v3.nuxtjs.org)
+
+[Source code repo](https://github.com/nuxt/framework)
+
+The Intuitive Vue Framework. Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful.
+
+```sh
+git clone --depth=1 https://github.com/nuxt/framework
+cd framework
+cd docs
+yarn install
+yarn build:ci
+cd ..
+cd ..
+tar czf "Nuxtjs V3.tar.gz" framework/docs/dist
+```
+
+Last tested on: 2022-04-29
+
+> Due to the file name restrictions on windows, the build may not work properly with client side hydration. Disable the javascript for best experience.
+
 # Other
 
 All other uncategorized tools
@@ -465,6 +620,26 @@ tar czf "prettier.tar.gz" prettier/website/build
 
 Last tested on: 2022-04-23
 
+## [typescript](https://www.typescriptlang.org/)
+
+[Source code repo](https://github.com/microsoft/TypeScript-Website)
+
+TypeScript is JavaScript with syntax for types.
+
+```sh
+git clone --depth=1 https://github.com/microsoft/TypeScript-Website
+cd TypeScript-Website
+yarn install
+yarn bootstrap
+yarn build-site
+cd ..
+tar czf "typescript.tar.gz" TypeScript-Website/docs/build
+```
+
+Last tested on: 2022-04-23
+
+> Requires node >=13 and node < 15 for building
+
 ---
 
 ## Todo
@@ -478,6 +653,6 @@ Visit my blog for latest articles related to web development
 [https://naveennamani.github.io/blog](https://naveennamani.github.io/blog) and
 for projects like this.
 
-Follow me on [dev.to](https://dev.to/naveennamani).
+Follow me on [dev.to/naveennamani](https://dev.to/naveennamani).
 
 ### &copy; Naveen Namani

@@ -1,3 +1,16 @@
+- name: bootstrap 5
+  website: https://getbootstrap.com/
+  description: The most popular HTML, CSS, and JavaScript framework for developing
+    responsive, mobile first projects on the web.
+  repo: https://github.com/twbs/bootstrap
+  commands:
+    - npm install
+    - npm run docs-build
+  direct_links: []
+  output_dir: bootstrap/_site
+  last_tested: 2022-04-23
+  note: Website of a css framework has broken css, I don't know?
+  license: null
 - name: daisyui
   website: https://daisyui.com
   description: The most popular, free and open-source Tailwind CSS component library

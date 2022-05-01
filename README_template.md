@@ -5,6 +5,8 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
+<!-- project_count -->
+
 <!-- toc -->
 
 ## But why? / Motivation
@@ -69,6 +71,6 @@ Visit my blog for latest articles related to web development
 [https://naveennamani.github.io/blog](https://naveennamani.github.io/blog) and
 for projects like this.
 
-Follow me on [dev.to](https://dev.to/naveennamani).
+Follow me on [dev.to/naveennamani](https://dev.to/naveennamani).
 
 ### &copy; Naveen Namani

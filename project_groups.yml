@@ -10,6 +10,9 @@
 - name: CSS frameworks/libraries
   description: null
   data_file: css.yml
+- name: Cross platform app development
+  description: Tools useful for development of crossplatform apps
+  data_file: cross_platform.yml
 - name: Frontend javascript frameworks/libraries
   description: null
   data_file: frontend.yml
@@ -19,6 +22,9 @@
 - name: Python
   description: All python related libraries
   data_file: python.yml
+- name: SSG, SSR
+  description: Frameworks like nextjs, nuxtjs used for generating static sites
+  data_file: ssg-ssr.yml
 - name: Other
   description: All other uncategorized tools
   data_file: other.yml

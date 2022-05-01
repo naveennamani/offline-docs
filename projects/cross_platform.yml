@@ -1,0 +1,14 @@
+- name: React Native
+  website: https://react-native.dev
+  description: Create native apps for Android and iOS using React
+  repo: https://github.com/facebook/react-native-website
+  commands:
+    - yarn install
+    - cd website
+    - yarn build
+    - cd ..
+  direct_links: []
+  output_dir: react-native=website/website/build
+  last_tested: 2022-05-01
+  note: null
+  license: null

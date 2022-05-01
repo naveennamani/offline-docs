@@ -22,3 +22,16 @@
   last_tested: 2022-04-23
   note: null
   license: null
+- name: typescript
+  website: https://www.typescriptlang.org/
+  description: TypeScript is JavaScript with syntax for types.
+  repo: https://github.com/microsoft/TypeScript-Website
+  commands:
+    - yarn install
+    - yarn bootstrap
+    - yarn build-site
+  direct_links: []
+  output_dir: TypeScript-Website/docs/build
+  last_tested: 2022-04-23
+  note: Requires node >=13 and node < 15 for building
+  license: null

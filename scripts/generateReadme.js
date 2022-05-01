@@ -7,6 +7,7 @@ import { getBuildCommands } from "./getBuildCommands.js";
 
 export function generateReadme() {
   let readme_lines = [];
+  let project_count = 0;
   const project_groups = yaml.parse(
     readFileSync("project_groups.yml", { encoding: "utf8" })
   );
@@ -19,6 +20,8 @@ export function generateReadme() {
     readme_lines.push(`# ${name}`);
     if (description) readme_lines.push(description);
     for (let project of projects) {
+      project_count += 1;
+
       const {
         name,
         website,
@@ -46,5 +49,5 @@ export function generateReadme() {
       if (note) readme_lines.push("> " + note);
     }
   }
-  return readme_lines.join("\n\n");
+  return [project_count, readme_lines.join("\n\n")];
 }

@@ -1,3 +1,17 @@
+- name: react-redux
+  website: https://react-redux.js.org/
+  description: Official React bindings for Redux
+  repo: https://github.com/reduxjs/react-redux
+  commands:
+    - cd website
+    - npm install
+    - npm run build
+    - cd ..
+  direct_links: []
+  output_dir: react-redux/website/build
+  last_tested: 2022-04-30
+  note: null
+  license: null
 - name: reactjs
   website: https://reactjs.org
   description: Do you really need an introduction to reactjs?
@@ -8,6 +22,35 @@
   direct_links: []
   output_dir: reactjs.org/public
   last_tested: 2022-04-15
+  note: null
+  license: null
+- name: redux
+  website: https://redux.js.org/
+  description: Redux is a predictable state container for JavaScript apps.
+  repo: https://github.com/reduxjs/redux
+  commands:
+    - cd website
+    - npm install
+    - npm run build
+    - cd ..
+  direct_links: []
+  output_dir: redux/website/build
+  last_tested: 2022-04-29
+  note: null
+  license: null
+- name: redux toolkit
+  website: https://redux-toolkit.js.org/
+  description: The official, opinionated, batteries-included toolset for efficient
+    Redux development.
+  repo: https://github.com/reduxjs/redux-toolkit
+  commands:
+    - cd website
+    - npm install
+    - npm run build
+    - cd ..
+  direct_links: []
+  output_dir: redux-toolkit/website/build
+  last_tested: 2022-04-30
   note: null
   license: null
 - name: vuejs V3
