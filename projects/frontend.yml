@@ -2,6 +2,7 @@
   website: https://react-redux.js.org/
   description: Official React bindings for Redux
   repo: https://github.com/reduxjs/react-redux
+  repo_branch: null
   commands:
     - cd website
     - npm install
@@ -16,6 +17,7 @@
   website: https://reactjs.org
   description: Do you really need an introduction to reactjs?
   repo: https://github.com/reactjs/reactjs.org
+  repo_branch: null
   commands:
     - yarn install
     - yarn build
@@ -28,6 +30,7 @@
   website: https://redux.js.org/
   description: Redux is a predictable state container for JavaScript apps.
   repo: https://github.com/reduxjs/redux
+  repo_branch: null
   commands:
     - cd website
     - npm install
@@ -43,6 +46,7 @@
   description: The official, opinionated, batteries-included toolset for efficient
     Redux development.
   repo: https://github.com/reduxjs/redux-toolkit
+  repo_branch: null
   commands:
     - cd website
     - npm install
@@ -58,6 +62,7 @@
   description: The Progressive JavaScript Framework. An approachable, performant
     and versatile framework for building web user interfaces.
   repo: https://github.com/vuejs/docs
+  repo_branch: null
   commands:
     - npm i -g pnpm
     - npx pnpm i --store=node_modules/.pnpm-store && npm run ci-docs

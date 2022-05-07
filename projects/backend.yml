@@ -2,6 +2,7 @@
   website: https://nodejs.org/en/
   description: Javascript runtime built on Chrome's V8 JavaScript engine
   repo: https://github.com/nodejs/node
+  repo_branch: null
   commands:
     - ./configure
     - mkdir out/Release

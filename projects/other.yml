@@ -2,6 +2,7 @@
   website: https://eslint.org
   description: Find and fix problems in your JavaScript code
   repo: https://github.com/eslint/website
+  repo_branch: null
   commands:
     - npm install
     - npm run build
@@ -14,6 +15,7 @@
   website: https://prettier.io
   description: Opinionated code formatter
   repo: https://github.com/prettier/prettier
+  repo_branch: null
   commands:
     - yarn install
     - yarn build:website
@@ -26,6 +28,7 @@
   website: https://www.typescriptlang.org/
   description: TypeScript is JavaScript with syntax for types.
   repo: https://github.com/microsoft/TypeScript-Website
+  repo_branch: null
   commands:
     - yarn install
     - yarn bootstrap

@@ -2,6 +2,7 @@
   website: https://vitejs.dev
   description: "vite: Next Generation Frontend Tooling"
   repo: https://github.com/vitejs/vite
+  repo_branch: null
   commands:
     - npm i -g pnpm
     - npx pnpm i --store=node_modules/.pnpm-store && npm run ci-docs

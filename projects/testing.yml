@@ -3,6 +3,7 @@
   description: Chai is a BDD / TDD assertion library for node and the browser that
     can be delightfully paired with any javascript testing framework.
   repo: https://github.com/chaijs/chaijs.github.io
+  repo_branch: null
   commands:
     - npm install
     - gem install bundler:1.16.1
@@ -20,6 +21,7 @@
   description: Mocha is a feature-rich JavaScript test framework running on
     Node.js and in the browser, making asynchronous testing simple and fun.
   repo: https://github.com/mochajs/mocha
+  repo_branch: null
   commands:
     - npm install
     - npm run start docs.production

@@ -3,6 +3,7 @@
   description: Ethereum is a technology that's home to digital money, global
     payments, and applications.
   repo: https://github.com/ethereum/ethereum-org-website
+  repo_branch: null
   commands:
     - npm install
     - npx gatsby build
@@ -16,6 +17,7 @@
   website: https://hardhat.org
   description: Ethereum development environment for professionals.
   repo: https://github.com/NomicFoundation/hardhat
+  repo_branch: null
   commands:
     - yarn install
     - cd docs/
@@ -26,12 +28,42 @@
   last_tested: 2022-04-15
   note: null
   license: null
+- name: matic.js
+  website: https://maticnetwork.github.io/matic.js/
+  description: The @matic.js is a javascript library which helps in interacting
+    with the various components of Matic Network.
+  repo: https://github.com/maticnetwork/matic.js
+  repo_branch: docs
+  commands:
+    - npm ci
+    - npm run deploy
+  direct_links:
+    - text: Github pages
+      link: https://github.com/maticnetwork/matic.js/archive/refs/heads/gh-pages.zip
+  output_dir: matic.js/build
+  last_tested: 2022-05-07
+  note: Requires node v14
+  license: null
+- name: polygon (matic)
+  website: https://docs.polygon.technology/
+  description: Polygon PoS documentation
+  repo: https://github.com/maticnetwork/matic-docs
+  repo_branch: null
+  commands:
+    - npm install
+    - npm run build
+  direct_links: []
+  output_dir: matic-docs/build
+  last_tested: 2022-05-07
+  note: null
+  license: null
 - name: solidity
   website: https://docs.soliditylang.org/en/v0.8.13/
   description: Solidity is an object-oriented, high-level language for
     implementing smart contracts. Smart contracts are programs which govern the
     behaviour of accounts within the Ethereum state.
   repo: https://github.com/ethereum/solidity
+  repo_branch: null
   commands:
     - cd docs
     - pip install -r requirements.txt
@@ -53,6 +85,7 @@
   description: The most advanced framework for testing smart contracts. Sweeter,
     simpler and faster.
   repo: https://github.com/EthWorks/Waffle
+  repo_branch: null
   commands:
     - cd docs
     - pip install -r requirements.txt

@@ -4,6 +4,7 @@
     with confidence using Nuxt. An open source framework making web development
     simple and powerful.
   repo: https://github.com/nuxt/nuxtjs.org
+  repo_branch: null
   commands:
     - yarn install
     - yarn build
@@ -20,6 +21,7 @@
     with confidence using Nuxt. An open source framework making web development
     simple and powerful.
   repo: https://github.com/nuxt/framework
+  repo_branch: null
   commands:
     - cd docs
     - yarn install
