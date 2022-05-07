@@ -5,27 +5,34 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 27 tools available
+Currently 32 tools available
 
 - [Backend](#backend)
   * [nodejs](#nodejs)
 - [Blockchain](#blockchain)
   * [ethereum](#ethereum)
   * [hardhat](#hardhat)
-  * [solidity](#solidity)
+  * [matic.js](#maticjs)
     + [Direct links](#direct-links)
-  * [waffle](#waffle)
+  * [polygon (matic)](#polygon-matic)
+  * [solidity](#solidity)
     + [Direct links](#direct-links-1)
+  * [waffle](#waffle)
+    + [Direct links](#direct-links-2)
 - [Build tools](#build-tools)
   * [vite](#vite)
 - [CSS frameworks/libraries](#css-frameworkslibraries)
   * [bootstrap 5](#bootstrap-5)
   * [daisyui](#daisyui)
   * [material ui](#material-ui)
+  * [polygonmesh](#polygonmesh)
+    + [Direct links](#direct-links-3)
+  * [storybook](#storybook)
   * [tailwindcss](#tailwindcss)
   * [windicss](#windicss)
 - [Cross platform app development](#cross-platform-app-development)
   * [React Native](#react-native)
+  * [tauri](#tauri)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
@@ -162,6 +169,46 @@ tar czf "hardhat.tar.gz" hardhat/docs/.vuepress/dist
 
 Last tested on: 2022-04-15
 
+## [matic.js](https://maticnetwork.github.io/matic.js/)
+
+[Source code repo](https://github.com/maticnetwork/matic.js)
+
+The @matic.js is a javascript library which helps in interacting with the various components of Matic Network.
+
+```sh
+git clone --depth=1 -b docs https://github.com/maticnetwork/matic.js
+cd matic.js
+npm ci
+npm run deploy
+cd ..
+tar czf "matic.js.tar.gz" matic.js/build
+```
+
+### Direct links
+
+- [Github pages](https://github.com/maticnetwork/matic.js/archive/refs/heads/gh-pages.zip)
+
+Last tested on: 2022-05-07
+
+> Requires node v14
+
+## [polygon (matic)](https://docs.polygon.technology/)
+
+[Source code repo](https://github.com/maticnetwork/matic-docs)
+
+Polygon PoS documentation
+
+```sh
+git clone --depth=1 https://github.com/maticnetwork/matic-docs
+cd matic-docs
+npm install
+npm run build
+cd ..
+tar czf "polygon (matic).tar.gz" matic-docs/build
+```
+
+Last tested on: 2022-05-07
+
 ## [solidity](https://docs.soliditylang.org/en/v0.8.13/)
 
 [Source code repo](https://github.com/ethereum/solidity)
@@ -288,6 +335,46 @@ tar czf "material ui.tar.gz" material-ui/docs/export
 
 Last tested on: 2022-04-15
 
+## [polygonmesh](https://maticnetwork.github.io/polygonmesh)
+
+[Source code repo](https://github.com/maticnetwork/polygonmesh)
+
+PolygonMesh is an open-source design system crafted meticulously by the designers and developer at Polygon Technology.
+
+```sh
+git clone --depth=1 -b docs https://github.com/maticnetwork/polygonmesh
+cd polygonmesh
+npm ci
+npm run deploy
+cd ..
+tar czf "polygonmesh.tar.gz" polygonmesh/build
+```
+
+### Direct links
+
+- [Github pages](https://github.com/maticnetwork/polygonmesh/archive/refs/heads/gh-pages.zip)
+
+Last tested on: 2022-05-07
+
+> Requires node v14
+
+## [storybook](https://storybook.js.org)
+
+[Source code repo](https://github.com/storybookjs/frontpage)
+
+Storybook is an open source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.
+
+```sh
+git clone --depth=1 https://github.com/storybookjs/frontpage
+cd frontpage
+yarn install
+yarn build:with-prefix
+cd ..
+tar czf "storybook.tar.gz" frontpage/public
+```
+
+Last tested on: 2022-05-07
+
 ## [tailwindcss](https://tailwindcss.com)
 
 [Source code repo](https://github.com/tailwindlabs/tailwindcss.com)
@@ -341,10 +428,27 @@ cd website
 yarn build
 cd ..
 cd ..
-tar czf "React Native.tar.gz" react-native=website/website/build
+tar czf "React Native.tar.gz" react-native-website/website/build
 ```
 
 Last tested on: 2022-05-01
+
+## [tauri](https://tauri.studio/)
+
+[Source code repo](https://github.com/tauri-apps/tauri-docs)
+
+Build smaller, faster, and more secure desktop applications with a web frontend
+
+```sh
+git clone --depth=1 https://github.com/tauri-apps/tauri-docs
+cd tauri-docs
+yarn install
+yarn build
+cd ..
+tar czf "tauri.tar.gz" tauri-docs/build
+```
+
+Last tested on: 2022-05-07
 
 # Frontend javascript frameworks/libraries
 
