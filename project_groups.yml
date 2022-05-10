@@ -19,6 +19,9 @@
 - name: Javascript testing libraries
   description: null
   data_file: testing.yml
+- name: Machine learning
+  description: Useful libraries for learning Machine Learning
+  data_file: ml.yml
 - name: Python
   description: All python related libraries
   data_file: python.yml

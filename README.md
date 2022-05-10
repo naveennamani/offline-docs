@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 32 tools available
+Currently 34 tools available
 
 - [Backend](#backend)
   * [nodejs](#nodejs)
@@ -42,6 +42,10 @@ Currently 32 tools available
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
   * [mochajs](#mochajs)
+- [Machine learning](#machine-learning)
+  * [numpy](#numpy)
+    + [Direct links](#direct-links-4)
+  * [numpy-tutorials](#numpy-tutorials)
 - [Python](#python)
   * [fastapi](#fastapi)
   * [pydantic](#pydantic)
@@ -582,6 +586,54 @@ tar czf "mochajs.tar.gz" mocha/docs/_site
 ```
 
 Last tested on: 2022-04-15
+
+# Machine learning
+
+Useful libraries for learning Machine Learning
+
+## [numpy](https://numpy.org/)
+
+[Source code repo](https://github.com/numpy/numpy)
+
+The fundamental package for scientific computing with Python
+
+```sh
+git clone --depth=1 https://github.com/numpy/numpy
+cd numpy
+pip install -r doc_requirements.txt
+cd doc/
+make html
+# it will throw an error saying installed version is not matching and will also show command as follows
+GITVER=abcdef make html ...
+cd ..
+tar czf "numpy.tar.gz" numpy/doc/build/html
+```
+
+### Direct links
+
+- [PDF version](https://numpy.org/doc/stable/numpy-user.pdf)
+- [Old versions](https://numpy.org/doc/)
+
+Last tested on: 2022-05-09
+
+## [numpy-tutorials](https://numpy.org/numpy-tutorials/)
+
+[Source code repo](https://github.com/numpy/numpy-tutorials)
+
+Set of tutorials and educational materials to learn numpy
+
+```sh
+git clone --depth=1 https://github.com/numpy/numpy-tutorials
+cd numpy-tutorials
+cd site
+pip install -r requirements.txt
+make html
+cd ..
+cd ..
+tar czf "numpy-tutorials.tar.gz" numpy-tutorials/site/_build
+```
+
+Last tested on: 2022-05-10
 
 # Python
 

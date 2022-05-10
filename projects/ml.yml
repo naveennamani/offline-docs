@@ -1,0 +1,36 @@
+- name: numpy
+  website: https://numpy.org/
+  description: The fundamental package for scientific computing with Python
+  repo: https://github.com/numpy/numpy
+  repo_branch: null
+  commands:
+    - pip install -r doc_requirements.txt
+    - cd doc/
+    - make html
+    - "# it will throw an error saying installed version is not matching and
+      will also show command as follows"
+    - GITVER=abcdef make html ...
+  direct_links:
+    - text: PDF version
+      link: https://numpy.org/doc/stable/numpy-user.pdf
+    - text: Old versions
+      link: https://numpy.org/doc/
+  output_dir: numpy/doc/build/html
+  last_tested: 2022-05-09
+  note: null
+  license: null
+- name: numpy-tutorials
+  website: https://numpy.org/numpy-tutorials/
+  description: Set of tutorials and educational materials to learn numpy
+  repo: https://github.com/numpy/numpy-tutorials
+  repo_branch: null
+  commands:
+    - cd site
+    - pip install -r requirements.txt
+    - make html
+    - cd ..
+  direct_links: []
+  output_dir: numpy-tutorials/site/_build
+  last_tested: 2022-05-10
+  note: null
+  license: null
