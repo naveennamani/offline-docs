@@ -11,9 +11,13 @@
       will also show command as follows"
     - GITVER=abcdef make html ...
   direct_links:
-    - text: PDF version
+    - text: NumPy User Guide - latest PDF
       link: https://numpy.org/doc/stable/numpy-user.pdf
-    - text: Old versions
+    - text: NumPy User Guide - HTML ZIP
+      link: https://numpy.org/doc/stable/numpy-html.zip
+    - text: NumPy Reference Guide - latest PDF
+      link: https://numpy.org/doc/stable/numpy-ref.pdf
+    - text: Old versions (HTML + ZIP, reference pdf, user pdf)
       link: https://numpy.org/doc/
   output_dir: numpy/doc/build/html
   last_tested: 2022-05-09
@@ -32,5 +36,57 @@
   direct_links: []
   output_dir: numpy-tutorials/site/_build
   last_tested: 2022-05-10
-  note: null
+  note: numpy-tutorials uses jupyter notebooks to generate content, and therefore
+    some examples may be broken due to missing libraries (for ex. ffmpeg)
+  license: null
+- name: scipy cookbook
+  website: https://scipy-cookbook.readthedocs.io
+  description: Collection of various uses-contributed recipes to learn scipy
+  repo: https://github.com/scipy/scipy-cookbook
+  repo_branch: null
+  commands:
+    - pip install -r requirements.txt
+    - python build.py --html
+  direct_links:
+    - text: Latest HTML + ZIP
+      link: https://scipy-cookbook.readthedocs.io/_/downloads/en/latest/htmlzip/
+  output_dir: scipy.org/public
+  last_tested: 2022-05-18
+  note: The latest HTML builds are failing, clone the repository and explore the
+    jupyter notebooks for a better experience
+  license: null
+- name: scipy devdocs
+  website: https://scipy.github.io/devdocs
+  description: SciPy documentation
+  repo: https://github.com/scipy/devdocs
+  repo_branch: null
+  commands:
+    - "# the repository is automatically updated with latest docs"
+  direct_links:
+    - text: github pages
+      link: https://github.com/scipy/devdocs/archive/refs/heads/gh-pages.zip
+    - text: SciPy docs (HTML + ZIP)
+      link: https://docs.scipy.org/doc/scipy/scipy-html-1.8.0.zip
+    - text: SciPy docs PDF (v1.8.0)
+      link: https://docs.scipy.org/doc/scipy/scipy-ref-1.8.0.pdf
+    - text: Scipy docs other versions
+      link: https://docs.scipy.org/doc/
+  output_dir: devdocs/
+  last_tested: 2022-05-18
+  note: Works well when served using `python -m http.server`
+  license: null
+- name: scipy.org website
+  website: https://scipy.org/
+  description: Fundamental algorithms for scientific computing in Python
+  repo: https://github.com/scipy/scipy.org
+  repo_branch: null
+  commands:
+    - pip install -r requirements.txt
+    - brew install hugo
+    - make html
+  direct_links: []
+  output_dir: scipy.org/public
+  last_tested: 2022-05-18
+  note: Requires hugo to be installed, follow instructions as per your operating
+    system
   license: null

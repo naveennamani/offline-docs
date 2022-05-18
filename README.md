@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 34 tools available
+Currently 37 tools available
 
 - [Backend](#backend)
   * [nodejs](#nodejs)
@@ -46,6 +46,11 @@ Currently 34 tools available
   * [numpy](#numpy)
     + [Direct links](#direct-links-4)
   * [numpy-tutorials](#numpy-tutorials)
+  * [scipy cookbook](#scipy-cookbook)
+    + [Direct links](#direct-links-5)
+  * [scipy devdocs](#scipy-devdocs)
+    + [Direct links](#direct-links-6)
+  * [scipy.org website](#scipyorg-website)
 - [Python](#python)
   * [fastapi](#fastapi)
   * [pydantic](#pydantic)
@@ -232,9 +237,9 @@ tar czf "solidity.tar.gz" solidity/docs/dist/html
 
 ### Direct links
 
-- [Latest PDF](https://docs.soliditylang.org/_/downloads/en/latest/pdf/)
-- [Latest HTML Zip](https://docs.soliditylang.org/_/downloads/en/latest/htmlzip/)
 - [Latest EPUB](https://docs.soliditylang.org/_/downloads/en/latest/epub/)
+- [Latest HTML Zip](https://docs.soliditylang.org/_/downloads/en/latest/htmlzip/)
+- [Latest PDF](https://docs.soliditylang.org/_/downloads/en/latest/pdf/)
 
 Last tested on: 2022-04-19
 
@@ -257,9 +262,9 @@ tar czf "waffle.tar.gz" Waffle/docs/dist/html
 
 ### Direct links
 
-- [Latest PDF](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/pdf/)
-- [Latest HTML Zip](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/htmlzip/)
 - [Latest EPUB](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/epub/)
+- [Latest HTML Zip](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/htmlzip/)
+- [Latest PDF](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/pdf/)
 
 Last tested on: 2022-04-19
 
@@ -611,8 +616,10 @@ tar czf "numpy.tar.gz" numpy/doc/build/html
 
 ### Direct links
 
-- [PDF version](https://numpy.org/doc/stable/numpy-user.pdf)
-- [Old versions](https://numpy.org/doc/)
+- [NumPy Reference Guide - latest PDF](https://numpy.org/doc/stable/numpy-ref.pdf)
+- [NumPy User Guide - HTML ZIP](https://numpy.org/doc/stable/numpy-html.zip)
+- [NumPy User Guide - latest PDF](https://numpy.org/doc/stable/numpy-user.pdf)
+- [Old versions (HTML + ZIP, reference pdf, user pdf)](https://numpy.org/doc/)
 
 Last tested on: 2022-05-09
 
@@ -634,6 +641,76 @@ tar czf "numpy-tutorials.tar.gz" numpy-tutorials/site/_build
 ```
 
 Last tested on: 2022-05-10
+
+> numpy-tutorials uses jupyter notebooks to generate content, and therefore some examples may be broken due to missing libraries (for ex. ffmpeg)
+
+## [scipy cookbook](https://scipy-cookbook.readthedocs.io)
+
+[Source code repo](https://github.com/scipy/scipy-cookbook)
+
+Collection of various uses-contributed recipes to learn scipy
+
+```sh
+git clone --depth=1 https://github.com/scipy/scipy-cookbook
+cd scipy-cookbook
+pip install -r requirements.txt
+python build.py --html
+cd ..
+tar czf "scipy cookbook.tar.gz" scipy.org/public
+```
+
+### Direct links
+
+- [Latest HTML + ZIP](https://scipy-cookbook.readthedocs.io/_/downloads/en/latest/htmlzip/)
+
+Last tested on: 2022-05-18
+
+> The latest HTML builds are failing, clone the repository and explore the jupyter notebooks for a better experience
+
+## [scipy devdocs](https://scipy.github.io/devdocs)
+
+[Source code repo](https://github.com/scipy/devdocs)
+
+SciPy documentation
+
+```sh
+git clone --depth=1 https://github.com/scipy/devdocs
+cd devdocs
+# the repository is automatically updated with latest docs
+cd ..
+tar czf "scipy devdocs.tar.gz" devdocs/
+```
+
+### Direct links
+
+- [SciPy docs (HTML + ZIP)](https://docs.scipy.org/doc/scipy/scipy-html-1.8.0.zip)
+- [SciPy docs PDF (v1.8.0)](https://docs.scipy.org/doc/scipy/scipy-ref-1.8.0.pdf)
+- [Scipy docs other versions](https://docs.scipy.org/doc/)
+- [github pages](https://github.com/scipy/devdocs/archive/refs/heads/gh-pages.zip)
+
+Last tested on: 2022-05-18
+
+> Works well when served using `python -m http.server`
+
+## [scipy.org website](https://scipy.org/)
+
+[Source code repo](https://github.com/scipy/scipy.org)
+
+Fundamental algorithms for scientific computing in Python
+
+```sh
+git clone --depth=1 https://github.com/scipy/scipy.org
+cd scipy.org
+pip install -r requirements.txt
+brew install hugo
+make html
+cd ..
+tar czf "scipy.org website.tar.gz" scipy.org/public
+```
+
+Last tested on: 2022-05-18
+
+> Requires hugo to be installed, follow instructions as per your operating system
 
 # Python
 

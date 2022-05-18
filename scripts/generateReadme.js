@@ -34,6 +34,7 @@ export function generateReadme() {
       } = project;
       const build_commands = getBuildCommands(project).join("\n");
       const links_text = direct_links
+        .sort((text1, text2) => (text1.text > text2.text ? 1 : -1))
         .map(({ text, link }) => `- [${text}](${link})`)
         .join("\n");
       readme_lines.push(`## [${name}](${website})`);
