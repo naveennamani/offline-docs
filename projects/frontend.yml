@@ -7,7 +7,7 @@
     - npm install -g inert-ssg
     - inert build
   direct_links: []
-  output_dir: public
+  output_dir: axios-docs/public
   last_tested: 2022-05-21
   note: null
   license: null
