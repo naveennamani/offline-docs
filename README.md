@@ -5,9 +5,10 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 37 tools available
+Currently 39 tools available
 
 - [Backend](#backend)
+  * [expressjs](#expressjs)
   * [nodejs](#nodejs)
 - [Blockchain](#blockchain)
   * [ethereum](#ethereum)
@@ -34,6 +35,7 @@ Currently 37 tools available
   * [React Native](#react-native)
   * [tauri](#tauri)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
+  * [axios](#axios)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
   * [redux](#redux)
@@ -111,6 +113,24 @@ Open an issue with as detailed error messages as possible.
    `python -m http.server`. (We recommend using serve package)
 
 # Backend
+
+## [expressjs](https:///expressjs.com)
+
+[Source code repo](https://github.com/expressjs/expressjs.com)
+
+Fast, unopinionated, minimalist web framework for Node.js
+
+```sh
+git clone --depth=1 https://github.com/expressjs/expressjs.com
+cd expressjs.com
+bundle install
+gem install jekyll-redirect-from
+bundle exec jekyll build
+cd ..
+tar czf "expressjs.tar.gz" expressjs.com/_site
+```
+
+Last tested on: 2022-05-21
 
 ## [nodejs](https://nodejs.org/en/)
 
@@ -460,6 +480,23 @@ tar czf "tauri.tar.gz" tauri-docs/build
 Last tested on: 2022-05-07
 
 # Frontend javascript frameworks/libraries
+
+## [axios](https://axios-http.com)
+
+[Source code repo](https://github.com/axios/axios-docs)
+
+Promise based HTTP client for the browser and node.js
+
+```sh
+git clone --depth=1 https://github.com/axios/axios-docs
+cd axios-docs
+npm install -g inert-ssg
+inert build
+cd ..
+tar czf "axios.tar.gz" public
+```
+
+Last tested on: 2022-05-21
 
 ## [react-redux](https://react-redux.js.org/)
 

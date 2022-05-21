@@ -1,3 +1,16 @@
+- name: axios
+  website: https://axios-http.com
+  description: Promise based HTTP client for the browser and node.js
+  repo: https://github.com/axios/axios-docs
+  repo_branch: null
+  commands:
+    - npm install -g inert-ssg
+    - inert build
+  direct_links: []
+  output_dir: public
+  last_tested: 2022-05-21
+  note: null
+  license: null
 - name: react-redux
   website: https://react-redux.js.org/
   description: Official React bindings for Redux
