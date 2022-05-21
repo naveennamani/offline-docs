@@ -1,3 +1,17 @@
+- name: expressjs
+  website: https:///expressjs.com
+  description: Fast, unopinionated, minimalist web framework for Node.js
+  repo: https://github.com/expressjs/expressjs.com
+  repo_branch: null
+  commands:
+    - bundle install
+    - gem install jekyll-redirect-from
+    - bundle exec jekyll build
+  direct_links: []
+  output_dir: expressjs.com/_site
+  last_tested: 2022-05-21
+  note: null
+  license: null
 - name: nodejs
   website: https://nodejs.org/en/
   description: Javascript runtime built on Chrome's V8 JavaScript engine
