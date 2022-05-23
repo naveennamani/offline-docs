@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 39 tools available
+Currently 40 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -45,6 +45,7 @@ Currently 39 tools available
   * [chaijs](#chaijs)
   * [mochajs](#mochajs)
 - [Machine learning](#machine-learning)
+  * [keras](#keras)
   * [numpy](#numpy)
     + [Direct links](#direct-links-4)
   * [numpy-tutorials](#numpy-tutorials)
@@ -493,7 +494,7 @@ cd axios-docs
 npm install -g inert-ssg
 inert build
 cd ..
-tar czf "axios.tar.gz" public
+tar czf "axios.tar.gz" axios-docs/public
 ```
 
 Last tested on: 2022-05-21
@@ -632,6 +633,25 @@ Last tested on: 2022-04-15
 # Machine learning
 
 Useful libraries for learning Machine Learning
+
+## [keras](https://keras.io)
+
+[Source code repo](https://github.com/keras-team/keras-io)
+
+Simple. Flexible. Powerful. Deep learning for humans.
+
+```sh
+git clone --depth=1 https://github.com/keras-team/keras-io
+cd keras-io
+pip install -r requirements.txt
+cd scripts
+python autogen.py make
+cd ..
+cd ..
+tar czf "keras.tar.gz" keras-io/site
+```
+
+Last tested on: 2022-05-23
 
 ## [numpy](https://numpy.org/)
 

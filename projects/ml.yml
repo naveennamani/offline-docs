@@ -1,3 +1,18 @@
+- name: keras
+  website: https://keras.io
+  description: Simple. Flexible. Powerful. Deep learning for humans.
+  repo: https://github.com/keras-team/keras-io
+  repo_branch: null
+  commands:
+    - pip install -r requirements.txt
+    - cd scripts
+    - python autogen.py make
+    - cd ..
+  direct_links: []
+  output_dir: keras-io/site
+  last_tested: 2022-05-23
+  note: null
+  license: null
 - name: numpy
   website: https://numpy.org/
   description: The fundamental package for scientific computing with Python
