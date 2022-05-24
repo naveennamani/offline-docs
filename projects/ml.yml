@@ -54,6 +54,28 @@
   note: numpy-tutorials uses jupyter notebooks to generate content, and therefore
     some examples may be broken due to missing libraries (for ex. ffmpeg)
   license: null
+- name: pandas
+  website: https://pandas.pydata.org
+  description: pandas is a fast, powerful, flexible and easy to use open source
+    data analysis and manipulation tool, built on top of the Python programming
+    language
+  repo: https://github.com/pandas-dev/pandas
+  repo_branch: null
+  commands: []
+  direct_links:
+    - text: Workflow artifacts
+      link: https://github.com/pandas-dev/pandas/actions/workflows/docbuild-and-upload.yml
+    - text: Latest PDF
+      link: https://pandas.pydata.org/docs/pandas.pdf
+    - text: pandas cheatsheet
+      link: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+  output_dir: ./
+  last_tested: 2022-05-24
+  note: pandas uploads the contents of the website as artifacts of
+    docbuild-and-upload workflow. Setting up conda environment and running all
+    those commands is honestly an overkill. Just go the workflow page, pick a
+    latest successful workflow run and download the artifact.
+  license: null
 - name: scipy cookbook
   website: https://scipy-cookbook.readthedocs.io
   description: Collection of various uses-contributed recipes to learn scipy

@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 40 tools available
+Currently 41 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -49,10 +49,12 @@ Currently 40 tools available
   * [numpy](#numpy)
     + [Direct links](#direct-links-4)
   * [numpy-tutorials](#numpy-tutorials)
-  * [scipy cookbook](#scipy-cookbook)
+  * [pandas](#pandas)
     + [Direct links](#direct-links-5)
-  * [scipy devdocs](#scipy-devdocs)
+  * [scipy cookbook](#scipy-cookbook)
     + [Direct links](#direct-links-6)
+  * [scipy devdocs](#scipy-devdocs)
+    + [Direct links](#direct-links-7)
   * [scipy.org website](#scipyorg-website)
 - [Python](#python)
   * [fastapi](#fastapi)
@@ -700,6 +702,29 @@ tar czf "numpy-tutorials.tar.gz" numpy-tutorials/site/_build
 Last tested on: 2022-05-10
 
 > numpy-tutorials uses jupyter notebooks to generate content, and therefore some examples may be broken due to missing libraries (for ex. ffmpeg)
+
+## [pandas](https://pandas.pydata.org)
+
+[Source code repo](https://github.com/pandas-dev/pandas)
+
+pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language
+
+```sh
+git clone --depth=1 https://github.com/pandas-dev/pandas
+cd pandas
+cd ..
+tar czf "pandas.tar.gz" ./
+```
+
+### Direct links
+
+- [Latest PDF](https://pandas.pydata.org/docs/pandas.pdf)
+- [Workflow artifacts](https://github.com/pandas-dev/pandas/actions/workflows/docbuild-and-upload.yml)
+- [pandas cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+
+Last tested on: 2022-05-24
+
+> pandas uploads the contents of the website as artifacts of docbuild-and-upload workflow. Setting up conda environment and running all those commands is honestly an overkill. Just go the workflow page, pick a latest successful workflow run and download the artifact.
 
 ## [scipy cookbook](https://scipy-cookbook.readthedocs.io)
 
