@@ -724,7 +724,7 @@ tar czf "pandas.tar.gz" ./
 
 Last tested on: 2022-05-24
 
-> pandas uploads the contents of the website as artifacts of docbuild-and-upload workflow. Setting up conda environment and running all those commands is honestly an overkill. Just go the workflow page, pick a latest successful workflow run and download the artifact.
+> pandas uploads the contents of the website as artifacts of docbuild-and-upload workflow. Setting up conda environment and running all those commands is honestly an overkill. Just go to the workflow page, pick a latest successful workflow run and download the artifact. Serve using `python -m http.server` for best results
 
 ## [scipy cookbook](https://scipy-cookbook.readthedocs.io)
 
