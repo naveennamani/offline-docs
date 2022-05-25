@@ -1,0 +1,73 @@
+- name: bottle
+  website: https://bottlepy.org/docs/dev/
+  description: Bottle is a fast, simple and lightweight WSGI micro web-framework
+    for Python. It is distributed as a single file module and has no
+    dependencies other than the Python Standard Library.
+  repo: https://github.com/bottlepy/bottle
+  repo_branch: null
+  commands:
+    - make docs
+  direct_links:
+    - text: Latest HTML
+      link: https://bottlepy.org/docs/dev/bottle-docs.zip
+    - text: Latest PDF
+      link: https://bottlepy.org/docs/dev/bottle-docs.pdf
+  output_dir: bottle/build/docs/html
+  last_tested: 2022-05-25
+  note: null
+  license: null
+- name: django
+  website: https://www.djangoproject.com/
+  description: The web framework for perfectionists with deadlines. Django makes
+    it easier to build better web apps more quickly and with less code.
+  repo: https://github.com/django/django
+  repo_branch: null
+  commands:
+    - cd docs
+    - pip install -r requirements.txt
+    - make html
+    - cd ..
+  direct_links:
+    - text: Latest EPUB
+      link: https://django.readthedocs.io/_/downloads/en/latest/epub/
+    - text: Latest HTML
+      link: https://django.readthedocs.io/_/downloads/en/latest/htmlzip/
+    - text: Latest PDF
+      link: https://django.readthedocs.io/_/downloads/en/latest/pdf/
+  output_dir: django/docs/_build/html
+  last_tested: 2022-05-25
+  note: null
+  license: null
+- name: fastapi
+  website: https://fastapi.tiangolo.com/
+  description: FastAPI is a modern, fast (high-performance), web framework for
+    building APIs with Python 3.6+ based on standard Python type hints.
+  repo: https://github.com/tiangolo/fastapi
+  repo_branch: null
+  commands:
+    - pip install flit
+    - flit install --user --extras doc
+    - sh scripts/build-docs.sh
+  direct_links: []
+  output_dir: fastapi/site
+  last_tested: 2022-04-23
+  note: null
+  license: null
+- name: flask
+  website: https://flask.palletsprojects.com/en/2.1.x/
+  description: Flask is a lightweight WSGI web application framework. It is
+    designed to make getting started quick and easy, with the ability to scale
+    up to complex applications.
+  repo: https://github.com/pallets/flask
+  repo_branch: null
+  commands:
+    - pip install -e .
+    - pip install -r requirements/docs.txt
+    - cd docs
+    - make html
+    - cd ..
+  direct_links: []
+  output_dir: flask/docs/_build/html
+  last_tested: 2022-05-25
+  note: null
+  license: null

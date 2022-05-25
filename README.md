@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 41 tools available
+Currently 44 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -57,9 +57,15 @@ Currently 41 tools available
     + [Direct links](#direct-links-7)
   * [scipy.org website](#scipyorg-website)
 - [Python](#python)
-  * [fastapi](#fastapi)
   * [pydantic](#pydantic)
   * [typer](#typer)
+- [Python web frameworks](#python-web-frameworks)
+  * [bottle](#bottle)
+    + [Direct links](#direct-links-8)
+  * [django](#django)
+    + [Direct links](#direct-links-9)
+  * [fastapi](#fastapi)
+  * [flask](#flask)
 - [SSG, SSR](#ssg-ssr)
   * [Nuxtjs](#nuxtjs)
   * [Nuxtjs V3](#nuxtjs-v3)
@@ -798,24 +804,6 @@ Last tested on: 2022-05-18
 
 All python related libraries
 
-## [fastapi](https://fastapi.tiangolo.com/)
-
-[Source code repo](https://github.com/tiangolo/fastapi)
-
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
-
-```sh
-git clone --depth=1 https://github.com/tiangolo/fastapi
-cd fastapi
-pip install flit
-flit install --user --extras doc
-sh scripts/build-docs.sh
-cd ..
-tar czf "fastapi.tar.gz" fastapi/site
-```
-
-Last tested on: 2022-04-23
-
 ## [pydantic](https://pydantic-docs.helpmanual.io/)
 
 [Source code repo](https://github.com/samuelcolvin/pydantic)
@@ -852,6 +840,94 @@ tar czf "typer.tar.gz" typer/site
 ```
 
 Last tested on: 2022-04-23
+
+# Python web frameworks
+
+Web frameworks for python
+
+## [bottle](https://bottlepy.org/docs/dev/)
+
+[Source code repo](https://github.com/bottlepy/bottle)
+
+Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a single file module and has no dependencies other than the Python Standard Library.
+
+```sh
+git clone --depth=1 https://github.com/bottlepy/bottle
+cd bottle
+make docs
+cd ..
+tar czf "bottle.tar.gz" bottle/build/docs/html
+```
+
+### Direct links
+
+- [Latest HTML](https://bottlepy.org/docs/dev/bottle-docs.zip)
+- [Latest PDF](https://bottlepy.org/docs/dev/bottle-docs.pdf)
+
+Last tested on: 2022-05-25
+
+## [django](https://www.djangoproject.com/)
+
+[Source code repo](https://github.com/django/django)
+
+The web framework for perfectionists with deadlines. Django makes it easier to build better web apps more quickly and with less code.
+
+```sh
+git clone --depth=1 https://github.com/django/django
+cd django
+cd docs
+pip install -r requirements.txt
+make html
+cd ..
+cd ..
+tar czf "django.tar.gz" django/docs/_build/html
+```
+
+### Direct links
+
+- [Latest EPUB](https://django.readthedocs.io/_/downloads/en/latest/epub/)
+- [Latest HTML](https://django.readthedocs.io/_/downloads/en/latest/htmlzip/)
+- [Latest PDF](https://django.readthedocs.io/_/downloads/en/latest/pdf/)
+
+Last tested on: 2022-05-25
+
+## [fastapi](https://fastapi.tiangolo.com/)
+
+[Source code repo](https://github.com/tiangolo/fastapi)
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+
+```sh
+git clone --depth=1 https://github.com/tiangolo/fastapi
+cd fastapi
+pip install flit
+flit install --user --extras doc
+sh scripts/build-docs.sh
+cd ..
+tar czf "fastapi.tar.gz" fastapi/site
+```
+
+Last tested on: 2022-04-23
+
+## [flask](https://flask.palletsprojects.com/en/2.1.x/)
+
+[Source code repo](https://github.com/pallets/flask)
+
+Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.
+
+```sh
+git clone --depth=1 https://github.com/pallets/flask
+cd flask
+pip install -e .
+pip install -r requirements/docs.txt
+cd docs
+make html
+cd ..
+cd ..
+tar czf "flask.tar.gz" flask/docs/_build/html
+```
+
+Last tested on: 2022-05-25
 
 # SSG, SSR
 

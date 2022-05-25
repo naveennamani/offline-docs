@@ -1,18 +1,3 @@
-- name: fastapi
-  website: https://fastapi.tiangolo.com/
-  description: FastAPI is a modern, fast (high-performance), web framework for
-    building APIs with Python 3.6+ based on standard Python type hints.
-  repo: https://github.com/tiangolo/fastapi
-  repo_branch: null
-  commands:
-    - pip install flit
-    - flit install --user --extras doc
-    - sh scripts/build-docs.sh
-  direct_links: []
-  output_dir: fastapi/site
-  last_tested: 2022-04-23
-  note: null
-  license: null
 - name: pydantic
   website: https://pydantic-docs.helpmanual.io/
   description: pydantic enforces type hints at runtime, and provides user friendly

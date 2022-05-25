@@ -25,6 +25,9 @@
 - name: Python
   description: All python related libraries
   data_file: python.yml
+- name: Python web frameworks
+  description: Web frameworks for python
+  data_file: python-web.yml
 - name: SSG, SSR
   description: Frameworks like nextjs, nuxtjs used for generating static sites
   data_file: ssg-ssr.yml
