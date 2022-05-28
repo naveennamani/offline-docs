@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 44 tools available
+Currently 45 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -58,12 +58,14 @@ Currently 44 tools available
   * [scipy.org website](#scipyorg-website)
 - [Python](#python)
   * [pydantic](#pydantic)
+  * [sqlalchemy](#sqlalchemy)
+    + [Direct links](#direct-links-8)
   * [typer](#typer)
 - [Python web frameworks](#python-web-frameworks)
   * [bottle](#bottle)
-    + [Direct links](#direct-links-8)
-  * [django](#django)
     + [Direct links](#direct-links-9)
+  * [django](#django)
+    + [Direct links](#direct-links-10)
   * [fastapi](#fastapi)
   * [flask](#flask)
 - [SSG, SSR](#ssg-ssr)
@@ -822,6 +824,30 @@ tar czf "pydantic.tar.gz" pydantic/site
 ```
 
 Last tested on: 2022-04-23
+
+## [sqlalchemy](https://www.sqlalchemy.org/)
+
+[Source code repo](https://github.com/sqlalchemy/sqlalchemy)
+
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+
+```sh
+git clone --depth=1 https://github.com/sqlalchemy/sqlalchemy
+cd sqlalchemy
+cd doc/build
+pip install -r requirements.txt
+make html
+cd ../..
+cd ..
+tar czf "sqlalchemy.tar.gz" doc/build/output/html
+```
+
+### Direct links
+
+- [Latest HTML V1.4](https://docs.sqlalchemy.org/20/sqlalchemy_14.zip)
+- [Latest HTML V2.0](https://docs.sqlalchemy.org/20/sqlalchemy_20.zip)
+
+Last tested on: 2022-05-28
 
 ## [typer](https://typer.tiangolo.com/)
 

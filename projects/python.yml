@@ -14,6 +14,26 @@
   last_tested: 2022-04-23
   note: null
   license: null
+- name: sqlalchemy
+  website: https://www.sqlalchemy.org/
+  description: SQLAlchemy is the Python SQL toolkit and Object Relational Mapper
+    that gives application developers the full power and flexibility of SQL.
+  repo: https://github.com/sqlalchemy/sqlalchemy
+  repo_branch: null
+  commands:
+    - cd doc/build
+    - pip install -r requirements.txt
+    - make html
+    - cd ../..
+  direct_links:
+    - text: Latest HTML V2.0
+      link: https://docs.sqlalchemy.org/20/sqlalchemy_20.zip
+    - text: Latest HTML V1.4
+      link: https://docs.sqlalchemy.org/20/sqlalchemy_14.zip
+  output_dir: doc/build/output/html
+  last_tested: 2022-05-28
+  note: null
+  license: null
 - name: typer
   website: https://typer.tiangolo.com/
   description: Typer is a library for building CLI applications that users will
