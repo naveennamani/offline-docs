@@ -34,3 +34,16 @@
     properly with client side hydration. Disable the javascript for best
     experience.
   license: null
+- name: vitepress
+  website: https://vitepress.vuejs.org/
+  description: Vite & Vue Powered Static Site Generator
+  repo: https://github.com/vuejs/vitepress
+  repo_branch: null
+  commands:
+    - npm install
+    - npm run docs-build
+  direct_links: []
+  output_dir: vitepress/docs/.vitepress/dist
+  last_tested: 2022-06-06
+  note: null
+  license: null

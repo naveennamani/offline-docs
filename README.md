@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 45 tools available
+Currently 46 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -71,6 +71,7 @@ Currently 45 tools available
 - [SSG, SSR](#ssg-ssr)
   * [Nuxtjs](#nuxtjs)
   * [Nuxtjs V3](#nuxtjs-v3)
+  * [vitepress](#vitepress)
 - [Other](#other)
   * [eslint](#eslint)
   * [prettier](#prettier)
@@ -998,6 +999,23 @@ tar czf "Nuxtjs V3.tar.gz" framework/docs/dist
 Last tested on: 2022-04-29
 
 > Due to the file name restrictions on windows, the build may not work properly with client side hydration. Disable the javascript for best experience.
+
+## [vitepress](https://vitepress.vuejs.org/)
+
+[Source code repo](https://github.com/vuejs/vitepress)
+
+Vite & Vue Powered Static Site Generator
+
+```sh
+git clone --depth=1 https://github.com/vuejs/vitepress
+cd vitepress
+npm install
+npm run docs-build
+cd ..
+tar czf "vitepress.tar.gz" vitepress/docs/.vitepress/dist
+```
+
+Last tested on: 2022-06-06
 
 # Other
 
