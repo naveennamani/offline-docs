@@ -1,6 +1,5 @@
 import { readdirSync, readFileSync, writeFileSync } from "fs";
 import { resolve } from "path";
-
 import yaml from "yaml";
 
 const { parse, stringify } = yaml;

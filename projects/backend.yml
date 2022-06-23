@@ -1,5 +1,5 @@
 - name: expressjs
-  website: https:///expressjs.com
+  website: https://expressjs.com
   description: Fast, unopinionated, minimalist web framework for Node.js
   repo: https://github.com/expressjs/expressjs.com
   repo_branch: null

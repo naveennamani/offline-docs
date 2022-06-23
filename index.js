@@ -1,7 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-
 import mdtoc from "markdown-toc";
-
 import { cleanAllDataFiles } from "./scripts/cleanFile.js";
 import { generateReadme } from "./scripts/generateReadme.js";
 

@@ -1,8 +1,6 @@
 import { readFileSync } from "fs";
 import { resolve } from "path";
-
 import yaml from "yaml";
-
 import { getBuildCommands } from "./getBuildCommands.js";
 
 export function generateReadme() {
@@ -37,8 +35,14 @@ export function generateReadme() {
         .sort((text1, text2) => (text1.text > text2.text ? 1 : -1))
         .map(({ text, link }) => `- [${text}](${link})`)
         .join("\n");
-      readme_lines.push(`## [${name}](${website})`);
-      readme_lines.push(`[Source code repo](${repo})`);
+      readme_lines.push(`<details>
+<summary>
+
+## ${name}
+
+</summary>`);
+      readme_lines.push(`Website - ${website}`);
+      readme_lines.push(`Source code repo - ${repo}`);
       if (description) readme_lines.push(description);
       if (build_commands)
         readme_lines.push("```sh\n" + build_commands + "\n```");
@@ -48,6 +52,7 @@ export function generateReadme() {
       }
       if (last_tested) readme_lines.push(`Last tested on: ${last_tested}`);
       if (note) readme_lines.push("> " + note);
+      readme_lines.push("</details>");
     }
   }
   return [project_count, readme_lines.join("\n\n")];

@@ -126,9 +126,16 @@ Open an issue with as detailed error messages as possible.
 
 # Backend
 
-## [expressjs](https:///expressjs.com)
+<details>
+<summary>
 
-[Source code repo](https://github.com/expressjs/expressjs.com)
+## expressjs
+
+</summary>
+
+Website - https://expressjs.com
+
+Source code repo - https://github.com/expressjs/expressjs.com
 
 Fast, unopinionated, minimalist web framework for Node.js
 
@@ -144,9 +151,18 @@ tar czf "expressjs.tar.gz" expressjs.com/_site
 
 Last tested on: 2022-05-21
 
-## [nodejs](https://nodejs.org/en/)
+</details>
 
-[Source code repo](https://github.com/nodejs/node)
+<details>
+<summary>
+
+## nodejs
+
+</summary>
+
+Website - https://nodejs.org/en/
+
+Source code repo - https://github.com/nodejs/node
 
 Javascript runtime built on Chrome's V8 JavaScript engine
 
@@ -168,13 +184,22 @@ Last tested on: 2022-04-23
 
 > Requires python and node installed.
 
+</details>
+
 # Blockchain
 
 Tools, projects, frameworks related to blockchain development
 
-## [ethereum](https://ethereum.org/en/)
+<details>
+<summary>
 
-[Source code repo](https://github.com/ethereum/ethereum-org-website)
+## ethereum
+
+</summary>
+
+Website - https://ethereum.org/en/
+
+Source code repo - https://github.com/ethereum/ethereum-org-website
 
 Ethereum is a technology that's home to digital money, global payments, and applications.
 
@@ -191,9 +216,18 @@ Last tested on: 2022-04-15 (unable to completely build)
 
 > ethereum.org is really a very big website and statically building it will require lot of CPU resouces as well as deep node_modules folder.
 
-## [hardhat](https://hardhat.org)
+</details>
 
-[Source code repo](https://github.com/NomicFoundation/hardhat)
+<details>
+<summary>
+
+## hardhat
+
+</summary>
+
+Website - https://hardhat.org
+
+Source code repo - https://github.com/NomicFoundation/hardhat
 
 Ethereum development environment for professionals.
 
@@ -210,9 +244,18 @@ tar czf "hardhat.tar.gz" hardhat/docs/.vuepress/dist
 
 Last tested on: 2022-04-15
 
-## [matic.js](https://maticnetwork.github.io/matic.js/)
+</details>
 
-[Source code repo](https://github.com/maticnetwork/matic.js)
+<details>
+<summary>
+
+## matic.js
+
+</summary>
+
+Website - https://maticnetwork.github.io/matic.js/
+
+Source code repo - https://github.com/maticnetwork/matic.js
 
 The @matic.js is a javascript library which helps in interacting with the various components of Matic Network.
 
@@ -233,9 +276,18 @@ Last tested on: 2022-05-07
 
 > Requires node v14
 
-## [polygon (matic)](https://docs.polygon.technology/)
+</details>
 
-[Source code repo](https://github.com/maticnetwork/matic-docs)
+<details>
+<summary>
+
+## polygon (matic)
+
+</summary>
+
+Website - https://docs.polygon.technology/
+
+Source code repo - https://github.com/maticnetwork/matic-docs
 
 Polygon PoS documentation
 
@@ -250,9 +302,18 @@ tar czf "polygon (matic).tar.gz" matic-docs/build
 
 Last tested on: 2022-05-07
 
-## [solidity](https://docs.soliditylang.org/en/v0.8.13/)
+</details>
 
-[Source code repo](https://github.com/ethereum/solidity)
+<details>
+<summary>
+
+## solidity
+
+</summary>
+
+Website - https://docs.soliditylang.org/en/v0.8.13/
+
+Source code repo - https://github.com/ethereum/solidity
 
 Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state.
 
@@ -275,9 +336,18 @@ tar czf "solidity.tar.gz" solidity/docs/dist/html
 
 Last tested on: 2022-04-19
 
-## [waffle](https://getwaffle.io)
+</details>
 
-[Source code repo](https://github.com/EthWorks/Waffle)
+<details>
+<summary>
+
+## waffle
+
+</summary>
+
+Website - https://getwaffle.io
+
+Source code repo - https://github.com/EthWorks/Waffle
 
 The most advanced framework for testing smart contracts. Sweeter, simpler and faster.
 
@@ -300,11 +370,20 @@ tar czf "waffle.tar.gz" Waffle/docs/dist/html
 
 Last tested on: 2022-04-19
 
+</details>
+
 # Build tools
 
-## [vite](https://vitejs.dev)
+<details>
+<summary>
 
-[Source code repo](https://github.com/vitejs/vite)
+## vite
+
+</summary>
+
+Website - https://vitejs.dev
+
+Source code repo - https://github.com/vitejs/vite
 
 vite: Next Generation Frontend Tooling
 
@@ -319,11 +398,20 @@ tar czf "vite.tar.gz" vite/docs/.vitepress/dist
 
 Last tested on: 2022-04-23
 
+</details>
+
 # CSS frameworks/libraries
 
-## [bootstrap 5](https://getbootstrap.com/)
+<details>
+<summary>
 
-[Source code repo](https://github.com/twbs/bootstrap)
+## bootstrap 5
+
+</summary>
+
+Website - https://getbootstrap.com/
+
+Source code repo - https://github.com/twbs/bootstrap
 
 The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.
 
@@ -340,9 +428,18 @@ Last tested on: 2022-04-23
 
 > Website of a css framework has broken css, I don't know?
 
-## [daisyui](https://daisyui.com)
+</details>
 
-[Source code repo](https://github.com/saadeghi/daisyui)
+<details>
+<summary>
+
+## daisyui
+
+</summary>
+
+Website - https://daisyui.com
+
+Source code repo - https://github.com/saadeghi/daisyui
 
 The most popular, free and open-source Tailwind CSS component library
 
@@ -359,9 +456,18 @@ tar czf "daisyui.tar.gz" daisyui/src/docs/build
 
 Last tested on: 2022-04-15
 
-## [material ui](https://mui.com)
+</details>
 
-[Source code repo](https://github.com/mui/material-ui/)
+<details>
+<summary>
+
+## material ui
+
+</summary>
+
+Website - https://mui.com
+
+Source code repo - https://github.com/mui/material-ui/
 
 MUI offers a comprehensive suite of UI tools to help you ship new features faster.
 
@@ -376,9 +482,18 @@ tar czf "material ui.tar.gz" material-ui/docs/export
 
 Last tested on: 2022-04-15
 
-## [polygonmesh](https://maticnetwork.github.io/polygonmesh)
+</details>
 
-[Source code repo](https://github.com/maticnetwork/polygonmesh)
+<details>
+<summary>
+
+## polygonmesh
+
+</summary>
+
+Website - https://maticnetwork.github.io/polygonmesh
+
+Source code repo - https://github.com/maticnetwork/polygonmesh
 
 PolygonMesh is an open-source design system crafted meticulously by the designers and developer at Polygon Technology.
 
@@ -399,9 +514,18 @@ Last tested on: 2022-05-07
 
 > Requires node v14
 
-## [storybook](https://storybook.js.org)
+</details>
 
-[Source code repo](https://github.com/storybookjs/frontpage)
+<details>
+<summary>
+
+## storybook
+
+</summary>
+
+Website - https://storybook.js.org
+
+Source code repo - https://github.com/storybookjs/frontpage
 
 Storybook is an open source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.
 
@@ -416,9 +540,18 @@ tar czf "storybook.tar.gz" frontpage/public
 
 Last tested on: 2022-05-07
 
-## [tailwindcss](https://tailwindcss.com)
+</details>
 
-[Source code repo](https://github.com/tailwindlabs/tailwindcss.com)
+<details>
+<summary>
+
+## tailwindcss
+
+</summary>
+
+Website - https://tailwindcss.com
+
+Source code repo - https://github.com/tailwindlabs/tailwindcss.com
 
 Rapidly build modern websites without ever leaving your HTML. tailwindcss is a utility first CSS framework.
 
@@ -433,9 +566,18 @@ tar czf "tailwindcss.tar.gz" tailwindcss.com/out
 
 Last tested on: 2022-04-15
 
-## [windicss](https://windicss.org)
+</details>
 
-[Source code repo](https://github.com/windicss/docs)
+<details>
+<summary>
+
+## windicss
+
+</summary>
+
+Website - https://windicss.org
+
+Source code repo - https://github.com/windicss/docs
 
 Next generation utility-first CSS framework.
 
@@ -451,13 +593,22 @@ tar czf "windicss.tar.gz" docs/.vitepress/dist
 
 Last tested on: 2022-04-19
 
+</details>
+
 # Cross platform app development
 
 Tools useful for development of crossplatform apps
 
-## [React Native](https://react-native.dev)
+<details>
+<summary>
 
-[Source code repo](https://github.com/facebook/react-native-website)
+## React Native
+
+</summary>
+
+Website - https://react-native.dev
+
+Source code repo - https://github.com/facebook/react-native-website
 
 Create native apps for Android and iOS using React
 
@@ -474,9 +625,18 @@ tar czf "React Native.tar.gz" react-native-website/website/build
 
 Last tested on: 2022-05-01
 
-## [tauri](https://tauri.studio/)
+</details>
 
-[Source code repo](https://github.com/tauri-apps/tauri-docs)
+<details>
+<summary>
+
+## tauri
+
+</summary>
+
+Website - https://tauri.studio/
+
+Source code repo - https://github.com/tauri-apps/tauri-docs
 
 Build smaller, faster, and more secure desktop applications with a web frontend
 
@@ -491,11 +651,20 @@ tar czf "tauri.tar.gz" tauri-docs/build
 
 Last tested on: 2022-05-07
 
+</details>
+
 # Frontend javascript frameworks/libraries
 
-## [axios](https://axios-http.com)
+<details>
+<summary>
 
-[Source code repo](https://github.com/axios/axios-docs)
+## axios
+
+</summary>
+
+Website - https://axios-http.com
+
+Source code repo - https://github.com/axios/axios-docs
 
 Promise based HTTP client for the browser and node.js
 
@@ -510,9 +679,18 @@ tar czf "axios.tar.gz" axios-docs/public
 
 Last tested on: 2022-05-21
 
-## [react-redux](https://react-redux.js.org/)
+</details>
 
-[Source code repo](https://github.com/reduxjs/react-redux)
+<details>
+<summary>
+
+## react-redux
+
+</summary>
+
+Website - https://react-redux.js.org/
+
+Source code repo - https://github.com/reduxjs/react-redux
 
 Official React bindings for Redux
 
@@ -529,9 +707,18 @@ tar czf "react-redux.tar.gz" react-redux/website/build
 
 Last tested on: 2022-04-30
 
-## [reactjs](https://reactjs.org)
+</details>
 
-[Source code repo](https://github.com/reactjs/reactjs.org)
+<details>
+<summary>
+
+## reactjs
+
+</summary>
+
+Website - https://reactjs.org
+
+Source code repo - https://github.com/reactjs/reactjs.org
 
 Do you really need an introduction to reactjs?
 
@@ -546,9 +733,18 @@ tar czf "reactjs.tar.gz" reactjs.org/public
 
 Last tested on: 2022-04-15
 
-## [redux](https://redux.js.org/)
+</details>
 
-[Source code repo](https://github.com/reduxjs/redux)
+<details>
+<summary>
+
+## redux
+
+</summary>
+
+Website - https://redux.js.org/
+
+Source code repo - https://github.com/reduxjs/redux
 
 Redux is a predictable state container for JavaScript apps.
 
@@ -565,9 +761,18 @@ tar czf "redux.tar.gz" redux/website/build
 
 Last tested on: 2022-04-29
 
-## [redux toolkit](https://redux-toolkit.js.org/)
+</details>
 
-[Source code repo](https://github.com/reduxjs/redux-toolkit)
+<details>
+<summary>
+
+## redux toolkit
+
+</summary>
+
+Website - https://redux-toolkit.js.org/
+
+Source code repo - https://github.com/reduxjs/redux-toolkit
 
 The official, opinionated, batteries-included toolset for efficient Redux development.
 
@@ -584,9 +789,18 @@ tar czf "redux toolkit.tar.gz" redux-toolkit/website/build
 
 Last tested on: 2022-04-30
 
-## [vuejs V3](https://v3.vuejs.org)
+</details>
 
-[Source code repo](https://github.com/vuejs/docs)
+<details>
+<summary>
+
+## vuejs V3
+
+</summary>
+
+Website - https://v3.vuejs.org
+
+Source code repo - https://github.com/vuejs/docs
 
 The Progressive JavaScript Framework. An approachable, performant and versatile framework for building web user interfaces.
 
@@ -601,11 +815,20 @@ tar czf "vuejs V3.tar.gz" docs/.vitepress/dist
 
 Last tested on: 2022-04-15
 
+</details>
+
 # Javascript testing libraries
 
-## [chaijs](https://www.chaijs.com/)
+<details>
+<summary>
 
-[Source code repo](https://github.com/chaijs/chaijs.github.io)
+## chaijs
+
+</summary>
+
+Website - https://www.chaijs.com/
+
+Source code repo - https://github.com/chaijs/chaijs.github.io
 
 Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
 
@@ -624,9 +847,18 @@ tar czf "chaijs.tar.gz" chaijs.github.io/_site
 
 Last tested on: 2022-04-15
 
-## [mochajs](https://mochajs.org)
+</details>
 
-[Source code repo](https://github.com/mochajs/mocha)
+<details>
+<summary>
+
+## mochajs
+
+</summary>
+
+Website - https://mochajs.org
+
+Source code repo - https://github.com/mochajs/mocha
 
 Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
 
@@ -641,13 +873,22 @@ tar czf "mochajs.tar.gz" mocha/docs/_site
 
 Last tested on: 2022-04-15
 
+</details>
+
 # Machine learning
 
 Useful libraries for learning Machine Learning
 
-## [keras](https://keras.io)
+<details>
+<summary>
 
-[Source code repo](https://github.com/keras-team/keras-io)
+## keras
+
+</summary>
+
+Website - https://keras.io
+
+Source code repo - https://github.com/keras-team/keras-io
 
 Simple. Flexible. Powerful. Deep learning for humans.
 
@@ -664,9 +905,18 @@ tar czf "keras.tar.gz" keras-io/site
 
 Last tested on: 2022-05-23
 
-## [numpy](https://numpy.org/)
+</details>
 
-[Source code repo](https://github.com/numpy/numpy)
+<details>
+<summary>
+
+## numpy
+
+</summary>
+
+Website - https://numpy.org/
+
+Source code repo - https://github.com/numpy/numpy
 
 The fundamental package for scientific computing with Python
 
@@ -691,9 +941,18 @@ tar czf "numpy.tar.gz" numpy/doc/build/html
 
 Last tested on: 2022-05-09
 
-## [numpy-tutorials](https://numpy.org/numpy-tutorials/)
+</details>
 
-[Source code repo](https://github.com/numpy/numpy-tutorials)
+<details>
+<summary>
+
+## numpy-tutorials
+
+</summary>
+
+Website - https://numpy.org/numpy-tutorials/
+
+Source code repo - https://github.com/numpy/numpy-tutorials
 
 Set of tutorials and educational materials to learn numpy
 
@@ -712,9 +971,18 @@ Last tested on: 2022-05-10
 
 > numpy-tutorials uses jupyter notebooks to generate content, and therefore some examples may be broken due to missing libraries (for ex. ffmpeg)
 
-## [pandas](https://pandas.pydata.org)
+</details>
 
-[Source code repo](https://github.com/pandas-dev/pandas)
+<details>
+<summary>
+
+## pandas
+
+</summary>
+
+Website - https://pandas.pydata.org
+
+Source code repo - https://github.com/pandas-dev/pandas
 
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language
 
@@ -735,9 +1003,18 @@ Last tested on: 2022-05-24
 
 > pandas uploads the contents of the website as artifacts of docbuild-and-upload workflow. Setting up conda environment and running all those commands is honestly an overkill. Just go to the workflow page, pick a latest successful workflow run and download the artifact. Serve using `python -m http.server` for best results
 
-## [scipy cookbook](https://scipy-cookbook.readthedocs.io)
+</details>
 
-[Source code repo](https://github.com/scipy/scipy-cookbook)
+<details>
+<summary>
+
+## scipy cookbook
+
+</summary>
+
+Website - https://scipy-cookbook.readthedocs.io
+
+Source code repo - https://github.com/scipy/scipy-cookbook
 
 Collection of various uses-contributed recipes to learn scipy
 
@@ -758,9 +1035,18 @@ Last tested on: 2022-05-18
 
 > The latest HTML builds are failing, clone the repository and explore the jupyter notebooks for a better experience
 
-## [scipy devdocs](https://scipy.github.io/devdocs)
+</details>
 
-[Source code repo](https://github.com/scipy/devdocs)
+<details>
+<summary>
+
+## scipy devdocs
+
+</summary>
+
+Website - https://scipy.github.io/devdocs
+
+Source code repo - https://github.com/scipy/devdocs
 
 SciPy documentation
 
@@ -783,9 +1069,18 @@ Last tested on: 2022-05-18
 
 > Works well when served using `python -m http.server`
 
-## [scipy.org website](https://scipy.org/)
+</details>
 
-[Source code repo](https://github.com/scipy/scipy.org)
+<details>
+<summary>
+
+## scipy.org website
+
+</summary>
+
+Website - https://scipy.org/
+
+Source code repo - https://github.com/scipy/scipy.org
 
 Fundamental algorithms for scientific computing in Python
 
@@ -803,13 +1098,22 @@ Last tested on: 2022-05-18
 
 > Requires hugo to be installed, follow instructions as per your operating system
 
+</details>
+
 # Python
 
 All python related libraries
 
-## [pydantic](https://pydantic-docs.helpmanual.io/)
+<details>
+<summary>
 
-[Source code repo](https://github.com/samuelcolvin/pydantic)
+## pydantic
+
+</summary>
+
+Website - https://pydantic-docs.helpmanual.io/
+
+Source code repo - https://github.com/samuelcolvin/pydantic
 
 pydantic enforces type hints at runtime, and provides user friendly errors when data is invalid.
 
@@ -826,9 +1130,18 @@ tar czf "pydantic.tar.gz" pydantic/site
 
 Last tested on: 2022-04-23
 
-## [sqlalchemy](https://www.sqlalchemy.org/)
+</details>
 
-[Source code repo](https://github.com/sqlalchemy/sqlalchemy)
+<details>
+<summary>
+
+## sqlalchemy
+
+</summary>
+
+Website - https://www.sqlalchemy.org/
+
+Source code repo - https://github.com/sqlalchemy/sqlalchemy
 
 SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
 
@@ -850,9 +1163,18 @@ tar czf "sqlalchemy.tar.gz" doc/build/output/html
 
 Last tested on: 2022-05-28
 
-## [typer](https://typer.tiangolo.com/)
+</details>
 
-[Source code repo](https://github.com/tiangolo/typer)
+<details>
+<summary>
+
+## typer
+
+</summary>
+
+Website - https://typer.tiangolo.com/
+
+Source code repo - https://github.com/tiangolo/typer
 
 Typer is a library for building CLI applications that users will love using and developers will love creating. Based on Python 3.6+ type hints.
 
@@ -868,13 +1190,22 @@ tar czf "typer.tar.gz" typer/site
 
 Last tested on: 2022-04-23
 
+</details>
+
 # Python web frameworks
 
 Web frameworks for python
 
-## [bottle](https://bottlepy.org/docs/dev/)
+<details>
+<summary>
 
-[Source code repo](https://github.com/bottlepy/bottle)
+## bottle
+
+</summary>
+
+Website - https://bottlepy.org/docs/dev/
+
+Source code repo - https://github.com/bottlepy/bottle
 
 Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a single file module and has no dependencies other than the Python Standard Library.
 
@@ -893,9 +1224,18 @@ tar czf "bottle.tar.gz" bottle/build/docs/html
 
 Last tested on: 2022-05-25
 
-## [django](https://www.djangoproject.com/)
+</details>
 
-[Source code repo](https://github.com/django/django)
+<details>
+<summary>
+
+## django
+
+</summary>
+
+Website - https://www.djangoproject.com/
+
+Source code repo - https://github.com/django/django
 
 The web framework for perfectionists with deadlines. Django makes it easier to build better web apps more quickly and with less code.
 
@@ -918,9 +1258,18 @@ tar czf "django.tar.gz" django/docs/_build/html
 
 Last tested on: 2022-05-25
 
-## [fastapi](https://fastapi.tiangolo.com/)
+</details>
 
-[Source code repo](https://github.com/tiangolo/fastapi)
+<details>
+<summary>
+
+## fastapi
+
+</summary>
+
+Website - https://fastapi.tiangolo.com/
+
+Source code repo - https://github.com/tiangolo/fastapi
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
@@ -936,9 +1285,18 @@ tar czf "fastapi.tar.gz" fastapi/site
 
 Last tested on: 2022-04-23
 
-## [flask](https://flask.palletsprojects.com/en/2.1.x/)
+</details>
 
-[Source code repo](https://github.com/pallets/flask)
+<details>
+<summary>
+
+## flask
+
+</summary>
+
+Website - https://flask.palletsprojects.com/en/2.1.x/
+
+Source code repo - https://github.com/pallets/flask
 
 Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications.
 
@@ -956,13 +1314,22 @@ tar czf "flask.tar.gz" flask/docs/_build/html
 
 Last tested on: 2022-05-25
 
+</details>
+
 # SSG, SSR
 
 Frameworks like nextjs, nuxtjs used for generating static sites
 
-## [Nuxtjs](https://nuxtjs.org)
+<details>
+<summary>
 
-[Source code repo](https://github.com/nuxt/nuxtjs.org)
+## Nuxtjs
+
+</summary>
+
+Website - https://nuxtjs.org
+
+Source code repo - https://github.com/nuxt/nuxtjs.org
 
 The Intuitive Vue Framework. Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful.
 
@@ -979,9 +1346,18 @@ Last tested on: 2022-04-29
 
 > Due to the file name restrictions on windows, the build may not work properly with client side hydration. Disable the javascript for best experience.
 
-## [Nuxtjs V3](https://v3.nuxtjs.org)
+</details>
 
-[Source code repo](https://github.com/nuxt/framework)
+<details>
+<summary>
+
+## Nuxtjs V3
+
+</summary>
+
+Website - https://v3.nuxtjs.org
+
+Source code repo - https://github.com/nuxt/framework
 
 The Intuitive Vue Framework. Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful.
 
@@ -1000,9 +1376,18 @@ Last tested on: 2022-04-29
 
 > Due to the file name restrictions on windows, the build may not work properly with client side hydration. Disable the javascript for best experience.
 
-## [vitepress](https://vitepress.vuejs.org/)
+</details>
 
-[Source code repo](https://github.com/vuejs/vitepress)
+<details>
+<summary>
+
+## vitepress
+
+</summary>
+
+Website - https://vitepress.vuejs.org/
+
+Source code repo - https://github.com/vuejs/vitepress
 
 Vite & Vue Powered Static Site Generator
 
@@ -1017,13 +1402,22 @@ tar czf "vitepress.tar.gz" vitepress/docs/.vitepress/dist
 
 Last tested on: 2022-06-06
 
+</details>
+
 # Other
 
 All other uncategorized tools
 
-## [eslint](https://eslint.org)
+<details>
+<summary>
 
-[Source code repo](https://github.com/eslint/website)
+## eslint
+
+</summary>
+
+Website - https://eslint.org
+
+Source code repo - https://github.com/eslint/website
 
 Find and fix problems in your JavaScript code
 
@@ -1038,9 +1432,18 @@ tar czf "eslint.tar.gz" website/_site
 
 Last tested on: 2022-04-15
 
-## [prettier](https://prettier.io)
+</details>
 
-[Source code repo](https://github.com/prettier/prettier)
+<details>
+<summary>
+
+## prettier
+
+</summary>
+
+Website - https://prettier.io
+
+Source code repo - https://github.com/prettier/prettier
 
 Opinionated code formatter
 
@@ -1055,9 +1458,18 @@ tar czf "prettier.tar.gz" prettier/website/build
 
 Last tested on: 2022-04-23
 
-## [typescript](https://www.typescriptlang.org/)
+</details>
 
-[Source code repo](https://github.com/microsoft/TypeScript-Website)
+<details>
+<summary>
+
+## typescript
+
+</summary>
+
+Website - https://www.typescriptlang.org/
+
+Source code repo - https://github.com/microsoft/TypeScript-Website
 
 TypeScript is JavaScript with syntax for types.
 
@@ -1074,6 +1486,8 @@ tar czf "typescript.tar.gz" TypeScript-Website/docs/build
 Last tested on: 2022-04-23
 
 > Requires node >=13 and node < 15 for building
+
+</details>
 
 ---
 
