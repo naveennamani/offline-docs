@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 46 tools available
+Currently 47 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -58,14 +58,16 @@ Currently 46 tools available
   * [scipy.org website](#scipyorg-website)
 - [Python](#python)
   * [pydantic](#pydantic)
-  * [sqlalchemy](#sqlalchemy)
+  * [requests](#requests)
     + [Direct links](#direct-links-8)
+  * [sqlalchemy](#sqlalchemy)
+    + [Direct links](#direct-links-9)
   * [typer](#typer)
 - [Python web frameworks](#python-web-frameworks)
   * [bottle](#bottle)
-    + [Direct links](#direct-links-9)
-  * [django](#django)
     + [Direct links](#direct-links-10)
+  * [django](#django)
+    + [Direct links](#direct-links-11)
   * [fastapi](#fastapi)
   * [flask](#flask)
 - [SSG, SSR](#ssg-ssr)
@@ -1129,6 +1131,43 @@ tar czf "pydantic.tar.gz" pydantic/site
 ```
 
 Last tested on: 2022-04-23
+
+</details>
+
+<details>
+<summary>
+
+## requests
+
+</summary>
+
+Website - https://requests.readthedocs.io/en/latest/
+
+Source code repo - https://github.com/psf/requests
+
+Requests is an elegant and simple HTTP library for Python, built for human beings.
+
+```sh
+git clone --depth=1 https://github.com/psf/requests
+cd requests
+cd docs
+pip install -r requirements.txt
+make html
+cd ..
+cd ..
+tar czf "requests.tar.gz" requests/docs/_build/html
+```
+
+### Direct links
+
+- [Latest EPUB](https://requests.readthedocs.io/_/downloads/en/latest/epub/)
+- [Latest HTML ZIP](https://requests.readthedocs.io/_/downloads/en/latest/htmlzip/)
+- [Latest PDF](https://requests.readthedocs.io/_/downloads/en/latest/pdf/)
+- [Stable EPUB](https://requests.readthedocs.io/_/downloads/en/stable/epub/)
+- [Stable HTML ZIP](https://requests.readthedocs.io/_/downloads/en/stable/htmlzip/)
+- [Stable PDF](https://requests.readthedocs.io/_/downloads/en/stable/pdf/)
+
+Last tested on: 2022-06-23
 
 </details>
 
