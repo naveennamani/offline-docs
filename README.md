@@ -5,7 +5,7 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## Available tools
 
-Currently 47 tools available
+Currently 48 tools available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -44,6 +44,7 @@ Currently 47 tools available
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
   * [mochajs](#mochajs)
+  * [playwright.dev](#playwrightdev)
 - [Machine learning](#machine-learning)
   * [keras](#keras)
   * [numpy](#numpy)
@@ -874,6 +875,32 @@ tar czf "mochajs.tar.gz" mocha/docs/_site
 ```
 
 Last tested on: 2022-04-15
+
+</details>
+
+<details>
+<summary>
+
+## playwright.dev
+
+</summary>
+
+Website - https://playwright.dev/
+
+Source code repo - https://github.com/microsoft/playwright.dev
+
+Reliable end-to-end testing for modern web apps
+
+```sh
+git clone --depth=1 https://github.com/microsoft/playwright.dev
+cd playwright.dev
+npm install
+npm run build
+cd ..
+tar czf "playwright.dev.tar.gz" playwright.dev/build
+```
+
+Last tested on: 2022-07-03
 
 </details>
 

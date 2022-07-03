@@ -30,3 +30,16 @@
   last_tested: 2022-04-15
   note: null
   license: null
+- name: playwright.dev
+  website: https://playwright.dev/
+  description: Reliable end-to-end testing for modern web apps
+  repo: https://github.com/microsoft/playwright.dev
+  repo_branch: null
+  commands:
+    - npm install
+    - npm run build
+  direct_links: []
+  output_dir: playwright.dev/build
+  last_tested: 2022-07-03
+  note: null
+  license: null
