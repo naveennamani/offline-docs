@@ -1,20 +1,14 @@
-import { readFileSync } from "fs";
-import { resolve } from "path";
-import yaml from "yaml";
 import { getBuildCommands } from "./getBuildCommands.js";
+import { getProjectDetails, getProjectGroupDetails } from "./utils.js";
 
 export function generateReadme() {
   let readme_lines = [];
   let project_count = 0;
-  const project_groups = yaml.parse(
-    readFileSync("project_groups.yml", { encoding: "utf8" })
-  );
+  const project_groups = getProjectGroupDetails();
 
   for (let project_group of project_groups) {
     const { name, description, data_file } = project_group;
-    const projects = yaml.parse(
-      readFileSync(resolve("projects", data_file), { encoding: "utf8" })
-    );
+    const projects = getProjectDetails(data_file);
     readme_lines.push(`# ${name}`);
     if (description) readme_lines.push(description);
     for (let project of projects) {
