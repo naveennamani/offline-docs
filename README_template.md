@@ -1,9 +1,9 @@
 # Offline-docs
 
 A collection of scripts to build offline documentation for your favourite
-frameworks/libraries. Simply search, copy/paste the commands and enjoy.
+frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
-## Available tools
+## Available projects
 
 <!-- project_count -->
 
@@ -11,25 +11,15 @@ frameworks/libraries. Simply search, copy/paste the commands and enjoy.
 
 ## But why? / Motivation
 
-Learning or working on a new language often requires referring to the official
-docs multiple times. With the rise of **Static Site Generation (SSG)** many
-documentation sites are now open-source and can be built for offline usage. This
-project aims to collect all such websites and the build commands to have a
-knowledge of widely used SSG tools.
+Learning or working on a new language/framework/library often requires referring
+to the official docs multiple times. With the rise of **Static Site Generation
+(SSG)** many documentation sites are now open-source and can be built for
+offline usage. This project aims to collect all such projects and the build
+commands to have a knowledge of widely used SSG tools.
 
 ## How to contribute
 
-- `project_groups.yml` file contains categories of websites and `data_file`
-  pointing to a file in `projects` directory which contains a list of projects
-  belonging to the corresponding group.
-- Every file in `projects` directory is a list of projects with each project
-  consisting of following information.
-  - name, website, description, repo, commands, output_dir, last_tested, note,
-    license
-- Modify suitable file in `projects` directory and add all information for a new
-  project.
-- If the project doesn't suits any existing category, add information about new
-  category in `project_groups.yml` file.
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## How to complain about faulty scripts
 
@@ -54,7 +44,8 @@ Open an issue with as detailed error messages as possible.
    .tar.gz file in your preferred location and rename the folder
 1. Use any static site serving tools like
    [serve (npm package)](https://www.npmjs.com/package/serve) or simply
-   `python -m http.server`. (We recommend using serve package)
+   `python -m http.server`. (We recommend using serve package if no tool is
+   specified by default)
 
 <!-- content -->
 

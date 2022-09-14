@@ -1,11 +1,11 @@
 # Offline-docs
 
 A collection of scripts to build offline documentation for your favourite
-frameworks/libraries. Simply search, copy/paste the commands and enjoy.
+frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
-## Available tools
+## Available projects
 
-Currently 48 tools available
+Currently 49 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -35,6 +35,7 @@ Currently 48 tools available
   * [React Native](#react-native)
   * [tauri](#tauri)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
+  * [RxJS](#rxjs)
   * [axios](#axios)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
@@ -82,25 +83,15 @@ Currently 48 tools available
 
 ## But why? / Motivation
 
-Learning or working on a new language often requires referring to the official
-docs multiple times. With the rise of **Static Site Generation (SSG)** many
-documentation sites are now open-source and can be built for offline usage. This
-project aims to collect all such websites and the build commands to have a
-knowledge of widely used SSG tools.
+Learning or working on a new language/framework/library often requires referring
+to the official docs multiple times. With the rise of **Static Site Generation
+(SSG)** many documentation sites are now open-source and can be built for
+offline usage. This project aims to collect all such projects and the build
+commands to have a knowledge of widely used SSG tools.
 
 ## How to contribute
 
-- `project_groups.yml` file contains categories of websites and `data_file`
-  pointing to a file in `projects` directory which contains a list of projects
-  belonging to the corresponding group.
-- Every file in `projects` directory is a list of projects with each project
-  consisting of following information.
-  - name, website, description, repo, commands, output_dir, last_tested, note,
-    license
-- Modify suitable file in `projects` directory and add all information for a new
-  project.
-- If the project doesn't suits any existing category, add information about new
-  category in `project_groups.yml` file.
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## How to complain about faulty scripts
 
@@ -125,7 +116,8 @@ Open an issue with as detailed error messages as possible.
    .tar.gz file in your preferred location and rename the folder
 1. Use any static site serving tools like
    [serve (npm package)](https://www.npmjs.com/package/serve) or simply
-   `python -m http.server`. (We recommend using serve package)
+   `python -m http.server`. (We recommend using serve package if no tool is
+   specified by default)
 
 # Backend
 
@@ -657,6 +649,34 @@ Last tested on: 2022-05-07
 </details>
 
 # Frontend javascript frameworks/libraries
+
+<details>
+<summary>
+
+## RxJS
+
+</summary>
+
+Website - https://rxjs.dev
+
+Source code repo - https://github.com/ReactiveX/rxjs
+
+Reactive Extensions Library for Javascript
+
+```sh
+git clone --depth=1 -b  https://github.com/ReactiveX/rxjs
+cd rxjs
+cd docs_app
+yarn install
+npm run ~~clean-generated && npm run docs && npm run ~~build
+cd ..
+cd ..
+tar czf "RxJS.tar.gz" rxjs/docs_app/dist
+```
+
+Last tested on: 2022-09-15
+
+</details>
 
 <details>
 <summary>

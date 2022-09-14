@@ -1,0 +1,4 @@
+tasks:
+  - name: Setup cli
+    init: npm install
+    command: node cli.js

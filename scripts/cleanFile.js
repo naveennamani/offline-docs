@@ -51,10 +51,10 @@ export function cleanProjectGroups() {
         a.name == "Other"
           ? 1
           : b.name == "Other"
-            ? -1
-            : a.name < b.name
-              ? -1
-              : 1
+          ? -1
+          : a.name < b.name
+          ? -1
+          : 1
       ) // sort by name and move Other to the end always
       .map(
         // sort keys in the object

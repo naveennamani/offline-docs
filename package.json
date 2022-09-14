@@ -26,6 +26,7 @@
   "homepage": "https://github.com/naveennamani/offline-docs#readme",
   "type": "module",
   "dependencies": {
+    "inquirer": "^9.0.0",
     "markdown-toc": "^1.2.0",
     "yaml": "^1.10.2"
   }
