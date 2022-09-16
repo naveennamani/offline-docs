@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 49 projects available
+Currently 50 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -22,6 +22,9 @@ Currently 49 projects available
     + [Direct links](#direct-links-2)
 - [Build tools](#build-tools)
   * [vite](#vite)
+- [Cross platform app development](#cross-platform-app-development)
+  * [React Native](#react-native)
+  * [tauri](#tauri)
 - [CSS frameworks/libraries](#css-frameworkslibraries)
   * [bootstrap 5](#bootstrap-5)
   * [daisyui](#daisyui)
@@ -31,16 +34,13 @@ Currently 49 projects available
   * [storybook](#storybook)
   * [tailwindcss](#tailwindcss)
   * [windicss](#windicss)
-- [Cross platform app development](#cross-platform-app-development)
-  * [React Native](#react-native)
-  * [tauri](#tauri)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
-  * [RxJS](#rxjs)
   * [axios](#axios)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
   * [redux](#redux)
   * [redux toolkit](#redux-toolkit)
+  * [RxJS](#rxjs)
   * [vuejs V3](#vuejs-v3)
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
@@ -58,6 +58,8 @@ Currently 49 projects available
   * [scipy devdocs](#scipy-devdocs)
     + [Direct links](#direct-links-7)
   * [scipy.org website](#scipyorg-website)
+- [Programming languages](#programming-languages)
+  * [gobyexample](#gobyexample)
 - [Python](#python)
   * [pydantic](#pydantic)
   * [requests](#requests)
@@ -395,6 +397,64 @@ Last tested on: 2022-04-23
 
 </details>
 
+# Cross platform app development
+
+Tools useful for development of crossplatform apps
+
+<details>
+<summary>
+
+## React Native
+
+</summary>
+
+Website - https://react-native.dev
+
+Source code repo - https://github.com/facebook/react-native-website
+
+Create native apps for Android and iOS using React
+
+```sh
+git clone --depth=1 https://github.com/facebook/react-native-website
+cd react-native-website
+yarn install
+cd website
+yarn build
+cd ..
+cd ..
+tar czf "React Native.tar.gz" react-native-website/website/build
+```
+
+Last tested on: 2022-05-01
+
+</details>
+
+<details>
+<summary>
+
+## tauri
+
+</summary>
+
+Website - https://tauri.studio/
+
+Source code repo - https://github.com/tauri-apps/tauri-docs
+
+Build smaller, faster, and more secure desktop applications with a web frontend
+
+```sh
+git clone --depth=1 https://github.com/tauri-apps/tauri-docs
+cd tauri-docs
+yarn install
+yarn build
+cd ..
+tar czf "tauri.tar.gz" tauri-docs/build
+```
+
+Last tested on: 2022-05-07
+
+</details>
+
 # CSS frameworks/libraries
 
 <details>
@@ -590,93 +650,7 @@ Last tested on: 2022-04-19
 
 </details>
 
-# Cross platform app development
-
-Tools useful for development of crossplatform apps
-
-<details>
-<summary>
-
-## React Native
-
-</summary>
-
-Website - https://react-native.dev
-
-Source code repo - https://github.com/facebook/react-native-website
-
-Create native apps for Android and iOS using React
-
-```sh
-git clone --depth=1 https://github.com/facebook/react-native-website
-cd react-native-website
-yarn install
-cd website
-yarn build
-cd ..
-cd ..
-tar czf "React Native.tar.gz" react-native-website/website/build
-```
-
-Last tested on: 2022-05-01
-
-</details>
-
-<details>
-<summary>
-
-## tauri
-
-</summary>
-
-Website - https://tauri.studio/
-
-Source code repo - https://github.com/tauri-apps/tauri-docs
-
-Build smaller, faster, and more secure desktop applications with a web frontend
-
-```sh
-git clone --depth=1 https://github.com/tauri-apps/tauri-docs
-cd tauri-docs
-yarn install
-yarn build
-cd ..
-tar czf "tauri.tar.gz" tauri-docs/build
-```
-
-Last tested on: 2022-05-07
-
-</details>
-
 # Frontend javascript frameworks/libraries
-
-<details>
-<summary>
-
-## RxJS
-
-</summary>
-
-Website - https://rxjs.dev
-
-Source code repo - https://github.com/ReactiveX/rxjs
-
-Reactive Extensions Library for Javascript
-
-```sh
-git clone --depth=1 -b  https://github.com/ReactiveX/rxjs
-cd rxjs
-cd docs_app
-yarn install
-npm run ~~clean-generated && npm run docs && npm run ~~build
-cd ..
-cd ..
-tar czf "RxJS.tar.gz" rxjs/docs_app/dist
-```
-
-Last tested on: 2022-09-15
-
-</details>
 
 <details>
 <summary>
@@ -811,6 +785,34 @@ tar czf "redux toolkit.tar.gz" redux-toolkit/website/build
 ```
 
 Last tested on: 2022-04-30
+
+</details>
+
+<details>
+<summary>
+
+## RxJS
+
+</summary>
+
+Website - https://rxjs.dev
+
+Source code repo - https://github.com/ReactiveX/rxjs
+
+Reactive Extensions Library for Javascript
+
+```sh
+git clone --depth=1 -b  https://github.com/ReactiveX/rxjs
+cd rxjs
+cd docs_app
+yarn install
+npm run ~~clean-generated && npm run docs && npm run ~~build
+cd ..
+cd ..
+tar czf "RxJS.tar.gz" rxjs/docs_app/dist
+```
+
+Last tested on: 2022-09-15
 
 </details>
 
@@ -1146,6 +1148,37 @@ tar czf "scipy.org website.tar.gz" scipy.org/public
 Last tested on: 2022-05-18
 
 > Requires hugo to be installed, follow instructions as per your operating system
+
+</details>
+
+# Programming languages
+
+Official & useful resources to start learning a new programming language
+
+<details>
+<summary>
+
+## gobyexample
+
+</summary>
+
+Website - https://gobyexample.com
+
+Source code repo - https://github.com/mmcgrana/gobyexample
+
+A hands-on introduction to Go using annotated example programs
+
+```sh
+git clone --depth=1 -b  https://github.com/mmcgrana/gobyexample
+cd gobyexample
+tools/build
+cd ..
+tar czf "gobyexample.tar.gz" gobyexample/public
+```
+
+Last tested on: 2022-09-16
+
+> Some pages are broken because of missing .html extension. So, run with `npx serve` and add .html extention when necessary. For best results run using the go server code given in tools/serve.go file in the repository.
 
 </details>
 

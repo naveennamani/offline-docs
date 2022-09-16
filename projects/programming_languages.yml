@@ -1,0 +1,14 @@
+- name: gobyexample
+  website: https://gobyexample.com
+  description: A hands-on introduction to Go using annotated example programs
+  repo: https://github.com/mmcgrana/gobyexample
+  repo_branch: ""
+  commands:
+    - tools/build
+  direct_links: []
+  output_dir: gobyexample/public
+  last_tested: 2022-09-16
+  note: Some pages are broken because of missing .html extension. So, run with
+    `npx serve` and add .html extention when necessary. For best results run
+    using the go server code given in tools/serve.go file in the repository.
+  license: ""

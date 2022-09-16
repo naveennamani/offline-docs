@@ -1,18 +1,3 @@
-- name: RxJS
-  website: https://rxjs.dev
-  description: Reactive Extensions Library for Javascript
-  repo: https://github.com/ReactiveX/rxjs
-  repo_branch: ""
-  commands:
-    - cd docs_app
-    - yarn install
-    - npm run ~~clean-generated && npm run docs && npm run ~~build
-    - cd ..
-  direct_links: []
-  output_dir: rxjs/docs_app/dist
-  last_tested: 2022-09-15
-  note: ""
-  license: ""
 - name: axios
   website: https://axios-http.com
   description: Promise based HTTP client for the browser and node.js
@@ -85,6 +70,21 @@
   last_tested: 2022-04-30
   note: null
   license: null
+- name: RxJS
+  website: https://rxjs.dev
+  description: Reactive Extensions Library for Javascript
+  repo: https://github.com/ReactiveX/rxjs
+  repo_branch: ""
+  commands:
+    - cd docs_app
+    - yarn install
+    - npm run ~~clean-generated && npm run docs && npm run ~~build
+    - cd ..
+  direct_links: []
+  output_dir: rxjs/docs_app/dist
+  last_tested: 2022-09-15
+  note: ""
+  license: ""
 - name: vuejs V3
   website: https://v3.vuejs.org
   description: The Progressive JavaScript Framework. An approachable, performant

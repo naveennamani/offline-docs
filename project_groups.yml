@@ -7,12 +7,12 @@
 - name: Build tools
   description: null
   data_file: build_tools.yml
-- name: CSS frameworks/libraries
-  description: null
-  data_file: css.yml
 - name: Cross platform app development
   description: Tools useful for development of crossplatform apps
   data_file: cross_platform.yml
+- name: CSS frameworks/libraries
+  description: null
+  data_file: css.yml
 - name: Frontend javascript frameworks/libraries
   description: null
   data_file: frontend.yml
@@ -22,6 +22,9 @@
 - name: Machine learning
   description: Useful libraries for learning Machine Learning
   data_file: ml.yml
+- name: Programming languages
+  description: Official & useful resources to start learning a new programming language
+  data_file: programming_languages.yml
 - name: Python
   description: All python related libraries
   data_file: python.yml
