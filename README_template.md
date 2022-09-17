@@ -54,7 +54,6 @@ Open an issue with as detailed error messages as possible.
 ## Todo
 
 - [ ] Auto update of README.md on push to main
-- [ ] Mozilla Developer Network
 
 ---
 

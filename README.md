@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 50 projects available
+Currently 51 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -80,6 +80,7 @@ Currently 50 projects available
   * [vitepress](#vitepress)
 - [Other](#other)
   * [eslint](#eslint)
+  * [Mozilla Developer Network](#mozilla-developer-network)
   * [prettier](#prettier)
   * [typescript](#typescript)
 
@@ -1556,6 +1557,35 @@ Last tested on: 2022-04-15
 <details>
 <summary>
 
+## Mozilla Developer Network
+
+</summary>
+
+Website - https://developer.mozilla.org
+
+Source code repo - https://github.com/mozilla/content
+
+Resources for Developers, by developers
+
+```sh
+git clone --depth=1 -b  https://github.com/mozilla/content
+cd content
+yarn install
+yarn build
+cp -r node_modules/@mdn/yari/client/build/ .
+cd ..
+tar czf "Mozilla Developer Network.tar.gz" content/build
+```
+
+Last tested on: 2022-09-17
+
+> MDN is a huge website with more than 11,000 pages. So, instead of building all pages, you may selectively delete unnecessary categories under `files/en-us` folder. Even though you have all HTML pages in build directory, all files are in lowercase whereas links contains camelcase. So, tools such as `python -m http.server` and `npx serve` may not be suitable to serve these HTML pages. Instead a simple and working approach is to open the html pages directly in the browser.
+
+</details>
+
+<details>
+<summary>
+
 ## prettier
 
 </summary>
@@ -1613,7 +1643,6 @@ Last tested on: 2022-04-23
 ## Todo
 
 - [ ] Auto update of README.md on push to main
-- [ ] Mozilla Developer Network
 
 ---
 

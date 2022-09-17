@@ -11,6 +11,26 @@
   last_tested: 2022-04-15
   note: null
   license: null
+- name: Mozilla Developer Network
+  website: https://developer.mozilla.org
+  description: Resources for Developers, by developers
+  repo: https://github.com/mozilla/content
+  repo_branch: ""
+  commands:
+    - yarn install
+    - yarn build
+    - cp -r node_modules/@mdn/yari/client/build/ .
+  direct_links: []
+  output_dir: content/build
+  last_tested: 2022-09-17
+  note: MDN is a huge website with more than 11,000 pages. So, instead of building
+    all pages, you may selectively delete unnecessary categories under
+    `files/en-us` folder. Even though you have all HTML pages in build
+    directory, all files are in lowercase whereas links contains camelcase. So,
+    tools such as `python -m http.server` and `npx serve` may not be suitable to
+    serve these HTML pages. Instead a simple and working approach is to open the
+    html pages directly in the browser.
+  license: ""
 - name: prettier
   website: https://prettier.io
   description: Opinionated code formatter
