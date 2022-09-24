@@ -1563,12 +1563,12 @@ Last tested on: 2022-04-15
 
 Website - https://developer.mozilla.org
 
-Source code repo - https://github.com/mozilla/content
+Source code repo - https://github.com/mdn/content
 
 Resources for Developers, by developers
 
 ```sh
-git clone --depth=1 -b  https://github.com/mozilla/content
+git clone --depth=1 -b  https://github.com/mdn/content
 cd content
 yarn install
 yarn build

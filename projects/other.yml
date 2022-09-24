@@ -14,7 +14,7 @@
 - name: Mozilla Developer Network
   website: https://developer.mozilla.org
   description: Resources for Developers, by developers
-  repo: https://github.com/mozilla/content
+  repo: https://github.com/mdn/content
   repo_branch: ""
   commands:
     - yarn install
