@@ -1,9 +1,12 @@
+import { closeSync, openSync } from "fs";
+import { resolve } from "path";
 import inquirer from "inquirer";
 import { updateReadMe } from "./scripts/updateReadme.js";
 import {
   getProjectDetails,
   getProjectGroupDetails,
   updateProjectDetails,
+  updateProjectGroupDetails,
 } from "./scripts/utils.js";
 
 async function getProjectGroupFromUser() {
@@ -113,11 +116,47 @@ async function askNewProjectDetails() {
   );
 }
 
-const { project_data_file } = await getProjectGroupFromUser();
-let newProjectDetails = await askNewProjectDetails();
+function askNewProjectGroupDetails() {
+  return inquirer.prompt([
+    {
+      name: "name",
+      message: "Title for the new project group",
+    },
+    {
+      name: "description",
+      message: "Description of the project group",
+    },
+    {
+      name: "data_file",
+      message: "name of the data file",
+    },
+  ]);
+}
 
-let projects = getProjectDetails(project_data_file);
-projects.push(newProjectDetails);
-updateProjectDetails(project_data_file, projects);
+const choices = ["Add a new project", "Create a new project group"];
+const selection = (
+  await inquirer.prompt({
+    type: "list",
+    name: "choice_type",
+    message: "Choose an option to continue",
+    choices,
+  })
+).choice_type;
+
+if (selection === choices[0]) {
+  const { project_data_file } = await getProjectGroupFromUser();
+  let newProjectDetails = await askNewProjectDetails();
+
+  let projects = getProjectDetails(project_data_file);
+  projects.push(newProjectDetails);
+  updateProjectDetails(project_data_file, projects);
+} else {
+  const newPGDetails = await askNewProjectGroupDetails();
+  let projectGroups = getProjectGroupDetails();
+  projectGroups.push(newPGDetails);
+  updateProjectGroupDetails(projectGroups);
+
+  closeSync(openSync(resolve("projects", newPGDetails.data_file), "a"));
+}
 
 updateReadMe();

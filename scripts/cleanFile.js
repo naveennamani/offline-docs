@@ -9,7 +9,7 @@ import {
 export function cleanProjectFile(fileName) {
   updateProjectDetails(
     fileName,
-    getProjectDetails(fileName)
+    (getProjectDetails(fileName) || [])
       .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)) // sort by name
       .map(
         // sort keys in the object
@@ -51,10 +51,10 @@ export function cleanProjectGroups() {
         a.name == "Other"
           ? 1
           : b.name == "Other"
-            ? -1
-            : a.name.toLowerCase() < b.name.toLowerCase()
-              ? -1
-              : 1
+          ? -1
+          : a.name.toLowerCase() < b.name.toLowerCase()
+          ? -1
+          : 1
       ) // sort by name and move Other to the end always
       .map(
         // sort keys in the object
