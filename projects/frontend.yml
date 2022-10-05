@@ -1,3 +1,19 @@
+- name: Angular
+  website: https://angular.io/
+  description: Angular is an application-design framework and development platform
+    for creating efficient and sophisticated single-page apps.
+  repo: https://github.com/angular/angular
+  repo_branch: ""
+  commands:
+    - npm install -g @angular/cli
+    - ng new my-first-project
+    - cd my-first-project
+    - ng serve
+  direct_links: []
+  output_dir: ""
+  last_tested: 2022-04-10
+  note: required node.js installed
+  license: ""
 - name: axios
   website: https://axios-http.com
   description: Promise based HTTP client for the browser and node.js

@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 51 projects available
+Currently 52 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -35,6 +35,7 @@ Currently 51 projects available
   * [tailwindcss](#tailwindcss)
   * [windicss](#windicss)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
+  * [Angular](#angular)
   * [axios](#axios)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
@@ -652,6 +653,36 @@ Last tested on: 2022-04-19
 </details>
 
 # Frontend javascript frameworks/libraries
+
+<details>
+<summary>
+
+## Angular
+
+</summary>
+
+Website - https://angular.io/
+
+Source code repo - https://github.com/angular/angular
+
+Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+
+```sh
+git clone --depth=1 -b  https://github.com/angular/angular
+cd angular
+npm install -g @angular/cli
+ng new my-first-project
+cd my-first-project
+ng serve
+cd ..
+tar czf "Angular.tar.gz" 
+```
+
+Last tested on: 2022-04-10
+
+> required node.js installed
+
+</details>
 
 <details>
 <summary>
