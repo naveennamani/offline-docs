@@ -5,11 +5,12 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 51 projects available
+Currently 52 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
   * [nodejs](#nodejs)
+  * [serverless](#serverless)
 - [Blockchain](#blockchain)
   * [ethereum](#ethereum)
   * [hardhat](#hardhat)
@@ -181,6 +182,36 @@ tar czf "nodejs.tar.gz" node/out/doc/api
 Last tested on: 2022-04-23
 
 > Requires python and node installed.
+
+</details>
+
+<details>
+<summary>
+
+## serverless
+
+</summary>
+
+Website - https://serverless.com/
+
+Source code repo - https://github.com/serverless-heaven/serverless-webpack
+
+A boilerpalte to create AWS Lambda
+
+```sh
+git clone --depth=1 -b  https://github.com/serverless-heaven/serverless-webpack
+cd serverless-webpack
+npm install -g serverless
+serverless create --template aws-nodejs-typescript --path my-project
+cd my-project
+npm install
+cd ..
+tar czf "serverless.tar.gz" 
+```
+
+Last tested on: 2022-10-04
+
+> Requires node or python installed and the credentials of aws console.
 
 </details>
 

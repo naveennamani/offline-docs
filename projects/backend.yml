@@ -30,3 +30,18 @@
   last_tested: 2022-04-23
   note: Requires python and node installed.
   license: null
+- name: serverless
+  website: https://serverless.com/
+  description: A boilerpalte to create AWS Lambda
+  repo: https://github.com/serverless-heaven/serverless-webpack
+  repo_branch: ""
+  commands:
+    - npm install -g serverless
+    - serverless create --template aws-nodejs-typescript --path my-project
+    - cd my-project
+    - npm install
+  direct_links: []
+  output_dir: ""
+  last_tested: 2022-10-04
+  note: Requires node or python installed and the credentials of aws console.
+  license: ""
