@@ -169,10 +169,7 @@ git clone --depth=1 https://github.com/nodejs/node
 cd node
 ./configure
 mkdir out/Release
-# Find out the location of the installed node binary
-which node
-# Copy the node binary to out/Release folder
-cp node out/Release
+cp `which node` out/Release
 make test-doc
 cd ..
 tar czf "nodejs.tar.gz" node/out/doc/api
@@ -480,9 +477,9 @@ cd ..
 tar czf "bootstrap 5.tar.gz" bootstrap/_site
 ```
 
-Last tested on: 2022-04-23
+Last tested on: 2022-10-06
 
-> Website of a css framework has broken css, I don't know?
+> Serve using `python -m http.server` for best experience.
 
 </details>
 

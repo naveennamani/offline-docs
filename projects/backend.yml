@@ -20,10 +20,7 @@
   commands:
     - ./configure
     - mkdir out/Release
-    - "# Find out the location of the installed node binary"
-    - which node
-    - "# Copy the node binary to out/Release folder"
-    - cp node out/Release
+    - cp `which node` out/Release
     - make test-doc
   direct_links: []
   output_dir: node/out/doc/api
