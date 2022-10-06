@@ -2,7 +2,7 @@ name: CI
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -13,8 +13,14 @@ jobs:
 
       - name: Setup node.js
         uses: actions/setup-node@v3.5.0
-      
+
       - name: Run readme update script
         run: |
           npm install
           node index.js
+          git diff -s --exit-code README.md
+          status=$?
+          if [[ $status -eq 1 ]]; then
+            echo "Please run `node index.js` & commit all changes to README.md"
+            exit 1
+          fi
