@@ -9,8 +9,8 @@
     - npm run docs-build
   direct_links: []
   output_dir: bootstrap/_site
-  last_tested: 2022-04-23
-  note: Website of a css framework has broken css, I don't know?
+  last_tested: 2022-10-06
+  note: Serve using `python -m http.server` for best experience.
   license: null
 - name: daisyui
   website: https://daisyui.com
