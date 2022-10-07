@@ -803,7 +803,7 @@ Source code repo - https://github.com/ReactiveX/rxjs
 Reactive Extensions Library for Javascript
 
 ```sh
-git clone --depth=1 -b  https://github.com/ReactiveX/rxjs
+git clone --depth=1 https://github.com/ReactiveX/rxjs
 cd rxjs
 cd docs_app
 yarn install
@@ -1170,7 +1170,7 @@ Source code repo - https://github.com/mmcgrana/gobyexample
 A hands-on introduction to Go using annotated example programs
 
 ```sh
-git clone --depth=1 -b  https://github.com/mmcgrana/gobyexample
+git clone --depth=1 https://github.com/mmcgrana/gobyexample
 cd gobyexample
 tools/build
 cd ..
@@ -1568,7 +1568,7 @@ Source code repo - https://github.com/mdn/content
 Resources for Developers, by developers
 
 ```sh
-git clone --depth=1 -b  https://github.com/mdn/content
+git clone --depth=1 https://github.com/mdn/content
 cd content
 yarn install
 yarn build
