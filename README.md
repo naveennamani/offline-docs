@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 51 projects available
+Currently 52 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -21,6 +21,7 @@ Currently 51 projects available
   * [waffle](#waffle)
     + [Direct links](#direct-links-2)
 - [Build tools](#build-tools)
+  * [Astro](#astro)
   * [vite](#vite)
 - [Cross platform app development](#cross-platform-app-development)
   * [React Native](#react-native)
@@ -368,6 +369,32 @@ Last tested on: 2022-04-19
 </details>
 
 # Build tools
+
+<details>
+<summary>
+
+## Astro
+
+</summary>
+
+Website - https://docs.astro.build
+
+Source code repo - https://github.com/withastro/docs
+
+Astro is an all-in-one web framework for building fast, content-focused websites
+
+```sh
+git clone --depth=1 https://github.com/withastro/docs
+cd docs
+npx pnpm install --store=node_modules/.pnpm-store
+npx pnpm build
+cd ..
+tar czf "Astro.tar.gz" docs/dist
+```
+
+Last tested on: 2022-10-08
+
+</details>
 
 <details>
 <summary>
