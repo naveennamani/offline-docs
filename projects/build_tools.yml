@@ -1,3 +1,17 @@
+- name: Astro
+  website: https://docs.astro.build
+  description: Astro is an all-in-one web framework for building fast,
+    content-focused websites
+  repo: https://github.com/withastro/docs
+  repo_branch: ""
+  commands:
+    - npx pnpm install --store=node_modules/.pnpm-store
+    - npx pnpm build
+  direct_links: []
+  output_dir: docs/dist
+  last_tested: 2022-10-08
+  note: ""
+  license: ""
 - name: vite
   website: https://vitejs.dev
   description: "vite: Next Generation Frontend Tooling"
