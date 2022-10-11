@@ -687,22 +687,22 @@ Last tested on: 2022-05-21
 
 </summary>
 
-Website - https://material.angular.io/ 
+Website - https://material.angular.io/
 
-Source code repo -  https://github.com/angular/material.angular.io.git
+Source code repo - https://github.com/angular/material.angular.io
 
 Angular Material is a User Interface (UI) component library that developers can use in their Angular projects to speed up the development of elegant and consistent user interfaces.
 
 ```sh
-git clone --depth=1 -b   https://github.com/angular/material.angular.io.git
-cd material.angular.io.git
+git clone --depth=1 -b  https://github.com/angular/material.angular.io
+cd material.angular.io
 yarn install
 yarn build
 cd ..
-tar czf "material.angular.tar.gz” material.angular.io/public
-cd ..
-tar czf "Material Angular.tar.gz" 
+tar czf "Material Angular.tar.gz" material.angular.io/public
 ```
+
+Last tested on: 2022-10-11
 
 > Make sure you have NodeJS LTS installed
 

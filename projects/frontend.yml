@@ -12,7 +12,7 @@
   note: null
   license: null
 - name: Material Angular
-  website: "https://material.angular.io/ "
+  website: https://material.angular.io/
   description: Angular Material is a User Interface (UI) component library that
     developers can use in their Angular projects to speed up the development of
     elegant and consistent user interfaces.
