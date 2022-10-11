@@ -11,6 +11,21 @@
   last_tested: 2022-05-21
   note: null
   license: null
+- name: Material Angular
+  website: https://material.angular.io/
+  description: Angular Material is a User Interface (UI) component library that
+    developers can use in their Angular projects to speed up the development of
+    elegant and consistent user interfaces.
+  repo: https://github.com/angular/material.angular.io
+  repo_branch: ""
+  commands:
+    - yarn install
+    - yarn build
+  direct_links: []
+  output_dir: material.angular.io/public
+  last_tested: 2022-10-11
+  note: Make sure you have NodeJS LTS installed
+  license: MIT license
 - name: react-redux
   website: https://react-redux.js.org/
   description: Official React bindings for Redux
