@@ -694,8 +694,6 @@ Source code repo -  https://github.com/angular/material.angular.io.git
 Angular Material is a User Interface (UI) component library that developers can use in their Angular projects to speed up the development of elegant and consistent user interfaces.
 
 ```sh
-git clone --depth=1 -b   https://github.com/angular/material.angular.io.git
-cd material.angular.io.git
 git clone --depth=1 https://github.com/angular/material.angular.io.git
 cd material.angular.io
 yarn install
