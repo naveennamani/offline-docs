@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 52 projects available
+Currently 54 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -36,6 +36,7 @@ Currently 52 projects available
   * [tailwindcss](#tailwindcss)
   * [windicss](#windicss)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
+  * [angular.io](#angulario)
   * [axios](#axios)
   * [Material Angular](#material-angular)
   * [react-redux](#react-redux)
@@ -681,6 +682,34 @@ Last tested on: 2022-04-19
 <details>
 <summary>
 
+## angular.io
+
+</summary>
+
+Website - https://angular.io
+
+Source code repo - https://github.com/angular/angular
+
+The modern web developer's platform for developing single page apps
+
+```sh
+git clone --depth=1 https://github.com/angular/angular
+cd angular
+cd aio
+yarn install
+yarn build
+cd ..
+cd ..
+tar czf "angular.io.tar.gz" angular/aio/dist
+```
+
+Last tested on: 2022-10-11
+
+</details>
+
+<details>
+<summary>
+
 ## axios
 
 </summary>
@@ -718,7 +747,7 @@ Source code repo - https://github.com/angular/material.angular.io
 Angular Material is a User Interface (UI) component library that developers can use in their Angular projects to speed up the development of elegant and consistent user interfaces.
 
 ```sh
-git clone --depth=1 -b  https://github.com/angular/material.angular.io
+git clone --depth=1 https://github.com/angular/material.angular.io
 cd material.angular.io
 yarn install
 yarn build

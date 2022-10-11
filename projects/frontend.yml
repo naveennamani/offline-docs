@@ -1,3 +1,18 @@
+- name: angular.io
+  website: https://angular.io
+  description: The modern web developer's platform for developing single page apps
+  repo: https://github.com/angular/angular
+  repo_branch: ""
+  commands:
+    - cd aio
+    - yarn install
+    - yarn build
+    - cd ..
+  direct_links: []
+  output_dir: angular/aio/dist
+  last_tested: 2022-10-11
+  note: ""
+  license: ""
 - name: axios
   website: https://axios-http.com
   description: Promise based HTTP client for the browser and node.js
