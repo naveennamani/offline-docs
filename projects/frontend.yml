@@ -19,8 +19,6 @@
   repo: " https://github.com/angular/material.angular.io.git"
   repo_branch: ""
   commands:
-    - git clone --depth=1 https://github.com/angular/material.angular.io.git
-    - cd material.angular.io
     - yarn install
     - yarn build
     - cd ..
