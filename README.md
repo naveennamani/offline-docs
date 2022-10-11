@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 51 projects available
+Currently 52 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -36,6 +36,7 @@ Currently 51 projects available
   * [windicss](#windicss)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
   * [axios](#axios)
+  * [Material Angular](#material-angular)
   * [react-redux](#react-redux)
   * [reactjs](#reactjs)
   * [redux](#redux)
@@ -676,6 +677,36 @@ tar czf "axios.tar.gz" axios-docs/public
 ```
 
 Last tested on: 2022-05-21
+
+</details>
+
+<details>
+<summary>
+
+## Material Angular
+
+</summary>
+
+Website - https://material.angular.io/ 
+
+Source code repo -  https://github.com/angular/material.angular.io.git
+
+Angular Material is a User Interface (UI) component library that developers can use in their Angular projects to speed up the development of elegant and consistent user interfaces.
+
+```sh
+git clone --depth=1 -b   https://github.com/angular/material.angular.io.git
+cd material.angular.io.git
+git clone --depth=1 https://github.com/angular/material.angular.io.git
+cd material.angular.io
+yarn install
+yarn build
+cd ..
+tar czf "material.angular.tar.gz” material.angular.io/public
+cd ..
+tar czf "Material Angular.tar.gz" 
+```
+
+> Make sure you have NodeJS LTS installed
 
 </details>
 
