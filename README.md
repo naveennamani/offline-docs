@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 54 projects available
+Currently 55 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -47,6 +47,7 @@ Currently 54 projects available
   * [vuejs V3](#vuejs-v3)
 - [Javascript testing libraries](#javascript-testing-libraries)
   * [chaijs](#chaijs)
+  * [jest](#jest)
   * [mochajs](#mochajs)
   * [playwright.dev](#playwrightdev)
 - [Machine learning](#machine-learning)
@@ -954,6 +955,36 @@ tar czf "chaijs.tar.gz" chaijs.github.io/_site
 ```
 
 Last tested on: 2022-04-15
+
+</details>
+
+<details>
+<summary>
+
+## jest
+
+</summary>
+
+Website - https://jestjs.io
+
+Source code repo - https://github.com/facebook/jest
+
+Jest is delightful Javascript Testing Framework with a focus on simplicity
+
+```sh
+git clone --depth=1 https://github.com/facebook/jest
+cd jest
+cd website
+yarn install
+yarn netlify:prepare && yarn write-translations && yarn build
+cd ..
+cd ..
+tar czf "jest.tar.gz" jest/website/build
+```
+
+Last tested on: 2022-10-15
+
+> By default the script builds the website for various languages. To generate only for interested languages (to improve build times), you can modify i18n.js file in website folder.
 
 </details>
 
