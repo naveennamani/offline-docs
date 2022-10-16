@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 55 projects available
+Currently 56 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -79,6 +79,7 @@ Currently 55 projects available
   * [fastapi](#fastapi)
   * [flask](#flask)
 - [SSG, SSR](#ssg-ssr)
+  * [Docusaurus](#docusaurus)
   * [Nuxtjs](#nuxtjs)
   * [Nuxtjs V3](#nuxtjs-v3)
   * [vitepress](#vitepress)
@@ -1552,6 +1553,34 @@ Last tested on: 2022-05-25
 # SSG, SSR
 
 Frameworks like nextjs, nuxtjs used for generating static sites
+
+<details>
+<summary>
+
+## Docusaurus
+
+</summary>
+
+Website - https://docusaurus.io
+
+Source code repo - https://github.com/facebook/docusaurus
+
+Build optimized websites quickly, focus on your content
+
+```sh
+git clone --depth=1 https://github.com/facebook/docusaurus
+cd docusaurus
+yarn install
+yarn build:packages && yarn build:website:fast
+cd ..
+tar czf "Docusaurus.tar.gz" docusaurus/website/build
+```
+
+Last tested on: 2022-10-15
+
+> You can use `yarn build:website` if you want to generate static content for all supported languages.
+
+</details>
 
 <details>
 <summary>

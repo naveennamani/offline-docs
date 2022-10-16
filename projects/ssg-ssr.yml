@@ -1,3 +1,17 @@
+- name: Docusaurus
+  website: https://docusaurus.io
+  description: Build optimized websites quickly, focus on your content
+  repo: https://github.com/facebook/docusaurus
+  repo_branch: ""
+  commands:
+    - yarn install
+    - yarn build:packages && yarn build:website:fast
+  direct_links: []
+  output_dir: docusaurus/website/build
+  last_tested: 2022-10-15
+  note: You can use `yarn build:website` if you want to generate static content
+    for all supported languages.
+  license: CC-BY-4.0
 - name: Nuxtjs
   website: https://nuxtjs.org
   description: The Intuitive Vue Framework. Build your next Vue.js application
