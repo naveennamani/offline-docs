@@ -16,6 +16,23 @@
   last_tested: 2022-04-15
   note: null
   license: null
+- name: jest
+  website: https://jestjs.io
+  description: Jest is delightful Javascript Testing Framework with a focus on simplicity
+  repo: https://github.com/facebook/jest
+  repo_branch: ""
+  commands:
+    - cd website
+    - yarn install
+    - yarn netlify:prepare && yarn write-translations && yarn build
+    - cd ..
+  direct_links: []
+  output_dir: jest/website/build
+  last_tested: 2022-10-15
+  note: By default the script builds the website for various languages. To
+    generate only for interested languages (to improve build times), you can
+    modify i18n.js file in website folder.
+  license: MIT
 - name: mochajs
   website: https://mochajs.org
   description: Mocha is a feature-rich JavaScript test framework running on
