@@ -1,3 +1,18 @@
+- name: angular.io
+  website: https://angular.io
+  description: The modern web developer's platform for developing single page apps
+  repo: https://github.com/angular/angular
+  repo_branch: ""
+  commands:
+    - cd aio
+    - yarn install
+    - yarn build
+    - cd ..
+  direct_links: []
+  output_dir: angular/aio/dist
+  last_tested: 2022-10-11
+  note: ""
+  license: ""
 - name: axios
   website: https://axios-http.com
   description: Promise based HTTP client for the browser and node.js
@@ -11,6 +26,21 @@
   last_tested: 2022-05-21
   note: null
   license: null
+- name: Material Angular
+  website: https://material.angular.io/
+  description: Angular Material is a User Interface (UI) component library that
+    developers can use in their Angular projects to speed up the development of
+    elegant and consistent user interfaces.
+  repo: https://github.com/angular/material.angular.io
+  repo_branch: ""
+  commands:
+    - yarn install
+    - yarn build
+  direct_links: []
+  output_dir: material.angular.io/public
+  last_tested: 2022-10-11
+  note: Make sure you have NodeJS LTS installed
+  license: MIT license
 - name: react-redux
   website: https://react-redux.js.org/
   description: Official React bindings for Redux

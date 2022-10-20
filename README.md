@@ -5,85 +5,99 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 52 projects available
+Currently 56 projects available
 
+- [Offline-docs](#offline-docs)
+  - [Available projects](#available-projects)
+  - [But why? / Motivation](#but-why--motivation)
+  - [How to contribute](#how-to-contribute)
+  - [How to complain about faulty scripts](#how-to-complain-about-faulty-scripts)
+  - [Disclaimer](#disclaimer)
+  - [How to use this repo](#how-to-use-this-repo)
 - [Backend](#backend)
-  * [expressjs](#expressjs)
-  * [nodejs](#nodejs)
+  - [expressjs](#expressjs)
+  - [nodejs](#nodejs)
 - [Blockchain](#blockchain)
-  * [ethereum](#ethereum)
-  * [hardhat](#hardhat)
-  * [matic.js](#maticjs)
-    + [Direct links](#direct-links)
-  * [polygon (matic)](#polygon-matic)
-  * [solidity](#solidity)
-    + [Direct links](#direct-links-1)
-  * [waffle](#waffle)
-    + [Direct links](#direct-links-2)
+  - [ethereum](#ethereum)
+  - [hardhat](#hardhat)
+  - [matic.js](#maticjs)
+    - [Direct links](#direct-links)
+  - [polygon (matic)](#polygon-matic)
+  - [solidity](#solidity)
+    - [Direct links](#direct-links-1)
+  - [waffle](#waffle)
+    - [Direct links](#direct-links-2)
 - [Build tools](#build-tools)
-  * [Astro](#astro)
-  * [vite](#vite)
+  - [Astro](#astro)
+  - [vite](#vite)
 - [Cross platform app development](#cross-platform-app-development)
-  * [React Native](#react-native)
-  * [tauri](#tauri)
+  - [Electron](#electron)
+  - [React Native](#react-native)
+  - [tauri](#tauri)
 - [CSS frameworks/libraries](#css-frameworkslibraries)
-  * [bootstrap 5](#bootstrap-5)
-  * [daisyui](#daisyui)
-  * [material ui](#material-ui)
-  * [polygonmesh](#polygonmesh)
-    + [Direct links](#direct-links-3)
-  * [storybook](#storybook)
-  * [tailwindcss](#tailwindcss)
-  * [windicss](#windicss)
+  - [bootstrap 5](#bootstrap-5)
+  - [daisyui](#daisyui)
+  - [material ui](#material-ui)
+  - [polygonmesh](#polygonmesh)
+    - [Direct links](#direct-links-3)
+  - [storybook](#storybook)
+  - [tailwindcss](#tailwindcss)
+  - [windicss](#windicss)
 - [Frontend javascript frameworks/libraries](#frontend-javascript-frameworkslibraries)
-  * [axios](#axios)
-  * [react-redux](#react-redux)
-  * [reactjs](#reactjs)
-  * [redux](#redux)
-  * [redux toolkit](#redux-toolkit)
-  * [RxJS](#rxjs)
-  * [vuejs V3](#vuejs-v3)
+  - [angular.io](#angulario)
+  - [axios](#axios)
+  - [Material Angular](#material-angular)
+  - [react-redux](#react-redux)
+  - [reactjs](#reactjs)
+  - [redux](#redux)
+  - [redux toolkit](#redux-toolkit)
+  - [RxJS](#rxjs)
+  - [vuejs V3](#vuejs-v3)
 - [Javascript testing libraries](#javascript-testing-libraries)
-  * [chaijs](#chaijs)
-  * [mochajs](#mochajs)
-  * [playwright.dev](#playwrightdev)
+  - [chaijs](#chaijs)
+  - [jest](#jest)
+  - [mochajs](#mochajs)
+  - [playwright.dev](#playwrightdev)
 - [Machine learning](#machine-learning)
-  * [keras](#keras)
-  * [numpy](#numpy)
-    + [Direct links](#direct-links-4)
-  * [numpy-tutorials](#numpy-tutorials)
-  * [pandas](#pandas)
-    + [Direct links](#direct-links-5)
-  * [scipy cookbook](#scipy-cookbook)
-    + [Direct links](#direct-links-6)
-  * [scipy devdocs](#scipy-devdocs)
-    + [Direct links](#direct-links-7)
-  * [scipy.org website](#scipyorg-website)
+  - [keras](#keras)
+  - [numpy](#numpy)
+    - [Direct links](#direct-links-4)
+  - [numpy-tutorials](#numpy-tutorials)
+  - [pandas](#pandas)
+    - [Direct links](#direct-links-5)
+  - [scipy cookbook](#scipy-cookbook)
+    - [Direct links](#direct-links-6)
+  - [scipy devdocs](#scipy-devdocs)
+    - [Direct links](#direct-links-7)
+  - [scipy.org website](#scipyorg-website)
 - [Programming languages](#programming-languages)
-  * [gobyexample](#gobyexample)
+  - [gobyexample](#gobyexample)
 - [Python](#python)
-  * [pydantic](#pydantic)
-  * [requests](#requests)
-    + [Direct links](#direct-links-8)
-  * [sqlalchemy](#sqlalchemy)
-    + [Direct links](#direct-links-9)
-  * [typer](#typer)
+  - [pydantic](#pydantic)
+  - [requests](#requests)
+    - [Direct links](#direct-links-8)
+  - [sqlalchemy](#sqlalchemy)
+    - [Direct links](#direct-links-9)
+  - [typer](#typer)
 - [Python web frameworks](#python-web-frameworks)
-  * [bottle](#bottle)
-    + [Direct links](#direct-links-10)
-  * [django](#django)
-    + [Direct links](#direct-links-11)
-  * [fastapi](#fastapi)
-  * [flask](#flask)
+  - [bottle](#bottle)
+    - [Direct links](#direct-links-10)
+  - [django](#django)
+    - [Direct links](#direct-links-11)
+  - [fastapi](#fastapi)
+  - [flask](#flask)
 - [SSG, SSR](#ssg-ssr)
-  * [Nuxtjs](#nuxtjs)
-  * [Nuxtjs V3](#nuxtjs-v3)
-  * [vitepress](#vitepress)
+  - [Docusaurus](#docusaurus)
+  - [Nuxtjs](#nuxtjs)
+  - [Nuxtjs V3](#nuxtjs-v3)
+  - [vitepress](#vitepress)
 - [Other](#other)
-  * [eslint](#eslint)
-  * [Mozilla Developer Network](#mozilla-developer-network)
-  * [prettier](#prettier)
-  * [typescript](#typescript)
+  - [eslint](#eslint)
+  - [Mozilla Developer Network](#mozilla-developer-network)
+  - [prettier](#prettier)
+  - [typescript](#typescript)
+  - [Todo](#todo)
+    - [&copy; Naveen Namani](#-naveen-namani)
 
 ## But why? / Motivation
 
@@ -429,6 +443,32 @@ Tools useful for development of crossplatform apps
 <details>
 <summary>
 
+## Electron
+
+</summary>
+
+Website - https://www.electronjs.org/
+
+Source code repo - https://github.com/electron/electronjs.org-new
+
+Build cross-platform desktop apps with JavaScript, HTML, and CSS
+
+```sh
+git clone --depth=1 https://github.com/electron/electronjs.org-new
+cd electronjs.org-new
+yarn install
+yarn build
+cd ..
+tar czf "Electron.tar.gz" electronjs.org-new/build
+```
+
+Last tested on: 2022-10-19
+
+</details>
+
+<details>
+<summary>
+
 ## React Native
 
 </summary>
@@ -680,6 +720,34 @@ Last tested on: 2022-04-19
 <details>
 <summary>
 
+## angular.io
+
+</summary>
+
+Website - https://angular.io
+
+Source code repo - https://github.com/angular/angular
+
+The modern web developer's platform for developing single page apps
+
+```sh
+git clone --depth=1 https://github.com/angular/angular
+cd angular
+cd aio
+yarn install
+yarn build
+cd ..
+cd ..
+tar czf "angular.io.tar.gz" angular/aio/dist
+```
+
+Last tested on: 2022-10-11
+
+</details>
+
+<details>
+<summary>
+
 ## axios
 
 </summary>
@@ -700,6 +768,34 @@ tar czf "axios.tar.gz" axios-docs/public
 ```
 
 Last tested on: 2022-05-21
+
+</details>
+
+<details>
+<summary>
+
+## Material Angular
+
+</summary>
+
+Website - https://material.angular.io/
+
+Source code repo - https://github.com/angular/material.angular.io
+
+Angular Material is a User Interface (UI) component library that developers can use in their Angular projects to speed up the development of elegant and consistent user interfaces.
+
+```sh
+git clone --depth=1 https://github.com/angular/material.angular.io
+cd material.angular.io
+yarn install
+yarn build
+cd ..
+tar czf "Material Angular.tar.gz" material.angular.io/public
+```
+
+Last tested on: 2022-10-11
+
+> Make sure you have NodeJS LTS installed
 
 </details>
 
@@ -896,6 +992,36 @@ tar czf "chaijs.tar.gz" chaijs.github.io/_site
 ```
 
 Last tested on: 2022-04-15
+
+</details>
+
+<details>
+<summary>
+
+## jest
+
+</summary>
+
+Website - https://jestjs.io
+
+Source code repo - https://github.com/facebook/jest
+
+Jest is delightful Javascript Testing Framework with a focus on simplicity
+
+```sh
+git clone --depth=1 https://github.com/facebook/jest
+cd jest
+cd website
+yarn install
+yarn netlify:prepare && yarn write-translations && yarn build
+cd ..
+cd ..
+tar czf "jest.tar.gz" jest/website/build
+```
+
+Last tested on: 2022-10-15
+
+> By default the script builds the website for various languages. To generate only for interested languages (to improve build times), you can modify i18n.js file in website folder.
 
 </details>
 
@@ -1463,6 +1589,34 @@ Last tested on: 2022-05-25
 # SSG, SSR
 
 Frameworks like nextjs, nuxtjs used for generating static sites
+
+<details>
+<summary>
+
+## Docusaurus
+
+</summary>
+
+Website - https://docusaurus.io
+
+Source code repo - https://github.com/facebook/docusaurus
+
+Build optimized websites quickly, focus on your content
+
+```sh
+git clone --depth=1 https://github.com/facebook/docusaurus
+cd docusaurus
+yarn install
+yarn build:packages && yarn build:website:fast
+cd ..
+tar czf "Docusaurus.tar.gz" docusaurus/website/build
+```
+
+Last tested on: 2022-10-15
+
+> You can use `yarn build:website` if you want to generate static content for all supported languages.
+
+</details>
 
 <details>
 <summary>

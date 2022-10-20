@@ -1,3 +1,16 @@
+- name: Electron
+  website: https://www.electronjs.org/
+  description: Build cross-platform desktop apps with JavaScript, HTML, and CSS
+  repo: https://github.com/electron/electronjs.org-new
+  repo_branch: ""
+  commands:
+    - yarn install
+    - yarn build
+  direct_links: []
+  output_dir: electronjs.org-new/build
+  last_tested: 2022-10-19
+  note: ""
+  license: Apache-2.0
 - name: React Native
   website: https://react-native.dev
   description: Create native apps for Android and iOS using React
