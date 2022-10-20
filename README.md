@@ -5,7 +5,7 @@ frameworks/libraries/projects. Simply search, copy/paste the commands and enjoy.
 
 ## Available projects
 
-Currently 56 projects available
+Currently 57 projects available
 
 - [Backend](#backend)
   * [expressjs](#expressjs)
@@ -24,6 +24,7 @@ Currently 56 projects available
   * [Astro](#astro)
   * [vite](#vite)
 - [Cross platform app development](#cross-platform-app-development)
+  * [Electron](#electron)
   * [React Native](#react-native)
   * [tauri](#tauri)
 - [CSS frameworks/libraries](#css-frameworkslibraries)
@@ -429,6 +430,32 @@ Last tested on: 2022-04-23
 # Cross platform app development
 
 Tools useful for development of crossplatform apps
+
+<details>
+<summary>
+
+## Electron
+
+</summary>
+
+Website - https://www.electronjs.org/
+
+Source code repo - https://github.com/electron/electronjs.org-new
+
+Build cross-platform desktop apps with JavaScript, HTML, and CSS
+
+```sh
+git clone --depth=1 https://github.com/electron/electronjs.org-new
+cd electronjs.org-new
+yarn install
+yarn build
+cd ..
+tar czf "Electron.tar.gz" electronjs.org-new/build
+```
+
+Last tested on: 2022-10-19
+
+</details>
 
 <details>
 <summary>
