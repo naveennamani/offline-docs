@@ -4,12 +4,14 @@
   repo: https://github.com/expressjs/expressjs.com
   repo_branch: null
   commands:
+    - "# remove hardcoded version for github-pages"
+    - sed -i "s|'110', ||g" Gemfile
     - bundle install
     - gem install jekyll-redirect-from
     - bundle exec jekyll build
   direct_links: []
   output_dir: expressjs.com/_site
-  last_tested: 2022-05-21
+  last_tested: 2023-10-30
   note: null
   license: null
 - name: nodejs
@@ -24,6 +26,6 @@
     - make test-doc
   direct_links: []
   output_dir: node/out/doc/api
-  last_tested: 2022-04-23
+  last_tested: 2023-10-30
   note: Requires python and node installed.
   license: null
