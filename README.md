@@ -146,6 +146,8 @@ Fast, unopinionated, minimalist web framework for Node.js
 ```sh
 git clone --depth=1 https://github.com/expressjs/expressjs.com
 cd expressjs.com
+# remove hardcoded version for github-pages
+sed -i "s|'110', ||g" Gemfile
 bundle install
 gem install jekyll-redirect-from
 bundle exec jekyll build
@@ -153,7 +155,7 @@ cd ..
 tar czf "expressjs.tar.gz" expressjs.com/_site
 ```
 
-Last tested on: 2022-05-21
+Last tested on: 2023-10-30
 
 </details>
 
@@ -181,7 +183,7 @@ cd ..
 tar czf "nodejs.tar.gz" node/out/doc/api
 ```
 
-Last tested on: 2022-04-23
+Last tested on: 2023-10-30
 
 > Requires python and node installed.
 
@@ -207,13 +209,13 @@ Ethereum is a technology that's home to digital money, global payments, and appl
 ```sh
 git clone --depth=1 https://github.com/ethereum/ethereum-org-website
 cd ethereum-org-website
-npm install
-npx gatsby build
+yarn install
+yarn build:10gb
 cd ..
 tar czf "ethereum.tar.gz" ethereum-org-website/public
 ```
 
-Last tested on: 2022-04-15 (unable to completely build)
+Last tested on: 2023-10-30 (unable to completely build)
 
 > ethereum.org is really a very big website and statically building it will require lot of CPU resouces as well as deep node_modules folder.
 
@@ -235,15 +237,21 @@ Ethereum development environment for professionals.
 ```sh
 git clone --depth=1 https://github.com/NomicFoundation/hardhat
 cd hardhat
-yarn install
+yarn --frozen-lockfile
 cd docs/
-sh build-site.sh
+yarn
+yarn add sharp
+sed -i 's|images: {|images: {\nloader: "imgix", path:"localhost:8000/",\n|g' hardhat/docs/next.config.js
+yarn build
+npx next export
 cd ..
 cd ..
-tar czf "hardhat.tar.gz" hardhat/docs/.vuepress/dist
+tar czf "hardhat.tar.gz" hardhat/docs/out
 ```
 
-Last tested on: 2022-04-15
+Last tested on: 2023-11-03
+
+> Serve with `npx serve -p 8000`. Images only work locally when running on port 8000.
 
 </details>
 
@@ -263,6 +271,8 @@ The @matic.js is a javascript library which helps in interacting with the variou
 ```sh
 git clone --depth=1 -b docs https://github.com/maticnetwork/matic.js
 cd matic.js
+nvm install 14
+nvm use 14
 npm ci
 npm run deploy
 cd ..
@@ -273,7 +283,7 @@ tar czf "matic.js.tar.gz" matic.js/build
 
 - [Github pages](https://github.com/maticnetwork/matic.js/archive/refs/heads/gh-pages.zip)
 
-Last tested on: 2022-05-07
+Last tested on: 2023-11-03
 
 > Requires node v14
 
@@ -286,22 +296,24 @@ Last tested on: 2022-05-07
 
 </summary>
 
-Website - https://docs.polygon.technology/
+Website - https://wiki.polygon.technology/
 
-Source code repo - https://github.com/maticnetwork/matic-docs
+Source code repo - https://github.com/0xPolygon/wiki
 
-Polygon PoS documentation
+The official documentation for 0xPolygon
 
 ```sh
-git clone --depth=1 https://github.com/maticnetwork/matic-docs
-cd matic-docs
+git clone --depth=1 https://github.com/0xPolygon/wiki
+cd wiki
 npm install
 npm run build
 cd ..
-tar czf "polygon (matic).tar.gz" matic-docs/build
+tar czf "polygon (matic).tar.gz" wiki/build
 ```
 
-Last tested on: 2022-05-07
+Last tested on: 2023-11-03
+
+> Use `npm run serve` for better experience
 
 </details>
 
@@ -323,10 +335,11 @@ git clone --depth=1 https://github.com/ethereum/solidity
 cd solidity
 cd docs
 pip install -r requirements.txt
-make html
+# add timezone environment variable to avoid failing of make
+TZ=UTC make html
 cd ..
 cd ..
-tar czf "solidity.tar.gz" solidity/docs/dist/html
+tar czf "solidity.tar.gz" solidity/docs/_build/html
 ```
 
 ### Direct links
@@ -335,7 +348,7 @@ tar czf "solidity.tar.gz" solidity/docs/dist/html
 - [Latest HTML Zip](https://docs.soliditylang.org/_/downloads/en/latest/htmlzip/)
 - [Latest PDF](https://docs.soliditylang.org/_/downloads/en/latest/pdf/)
 
-Last tested on: 2022-04-19
+Last tested on: 2023-11-03
 
 </details>
 
@@ -357,7 +370,7 @@ git clone --depth=1 https://github.com/EthWorks/Waffle
 cd Waffle
 cd docs
 pip install -r requirements.txt
-make html
+TZ=UTC make html
 cd ..
 cd ..
 tar czf "waffle.tar.gz" Waffle/docs/dist/html
@@ -369,7 +382,7 @@ tar czf "waffle.tar.gz" Waffle/docs/dist/html
 - [Latest HTML Zip](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/htmlzip/)
 - [Latest PDF](https://ethereum-waffle.readthedocs.io/_/downloads/en/latest/pdf/)
 
-Last tested on: 2022-04-19
+Last tested on: 2023-11-03
 
 </details>
 
