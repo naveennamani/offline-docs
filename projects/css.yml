@@ -80,10 +80,12 @@
   repo_branch: null
   commands:
     - yarn install
+    - 'sed -i "s|export default {|export default {\n  images: { unoptimized:
+      true},\n|g" next.config.mjs'
     - yarn export
   direct_links: []
   output_dir: tailwindcss.com/out
-  last_tested: 2022-04-15
+  last_tested: 2023-11-03
   note: null
   license: null
 - name: windicss

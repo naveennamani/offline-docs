@@ -683,12 +683,13 @@ Rapidly build modern websites without ever leaving your HTML. tailwindcss is a u
 git clone --depth=1 https://github.com/tailwindlabs/tailwindcss.com
 cd tailwindcss.com
 yarn install
+sed -i "s|export default {|export default {\n  images: { unoptimized: true},\n|g" next.config.mjs
 yarn export
 cd ..
 tar czf "tailwindcss.tar.gz" tailwindcss.com/out
 ```
 
-Last tested on: 2022-04-15
+Last tested on: 2023-11-03
 
 </details>
 
