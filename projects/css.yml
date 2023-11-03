@@ -9,7 +9,7 @@
     - npm run docs-build
   direct_links: []
   output_dir: bootstrap/_site
-  last_tested: 2022-10-06
+  last_tested: 2023-11-03
   note: Serve using `python -m http.server` for best experience.
   license: null
 - name: daisyui
@@ -24,7 +24,7 @@
     - cd ../..
   direct_links: []
   output_dir: daisyui/src/docs/build
-  last_tested: 2022-04-15
+  last_tested: 2023-11-03
   note: null
   license: null
 - name: material ui
@@ -38,7 +38,7 @@
     - yarn docs:build && yarn docs:export
   direct_links: []
   output_dir: material-ui/docs/export
-  last_tested: 2022-04-15
+  last_tested: 2023-11-03
   note: null
   license: null
 - name: polygonmesh
@@ -49,12 +49,12 @@
   repo_branch: docs
   commands:
     - npm ci
-    - npm run deploy
+    - npm run build
   direct_links:
     - text: Github pages
       link: https://github.com/maticnetwork/polygonmesh/archive/refs/heads/gh-pages.zip
   output_dir: polygonmesh/build
-  last_tested: 2022-05-07
+  last_tested: 2023-11-03
   note: Requires node v14
   license: null
 - name: storybook

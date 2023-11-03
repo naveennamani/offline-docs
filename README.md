@@ -548,7 +548,7 @@ cd ..
 tar czf "bootstrap 5.tar.gz" bootstrap/_site
 ```
 
-Last tested on: 2022-10-06
+Last tested on: 2023-11-03
 
 > Serve using `python -m http.server` for best experience.
 
@@ -578,7 +578,7 @@ cd ..
 tar czf "daisyui.tar.gz" daisyui/src/docs/build
 ```
 
-Last tested on: 2022-04-15
+Last tested on: 2023-11-03
 
 </details>
 
@@ -604,7 +604,7 @@ cd ..
 tar czf "material ui.tar.gz" material-ui/docs/export
 ```
 
-Last tested on: 2022-04-15
+Last tested on: 2023-11-03
 
 </details>
 
@@ -625,7 +625,7 @@ PolygonMesh is an open-source design system crafted meticulously by the designer
 git clone --depth=1 -b docs https://github.com/maticnetwork/polygonmesh
 cd polygonmesh
 npm ci
-npm run deploy
+npm run build
 cd ..
 tar czf "polygonmesh.tar.gz" polygonmesh/build
 ```
@@ -634,7 +634,7 @@ tar czf "polygonmesh.tar.gz" polygonmesh/build
 
 - [Github pages](https://github.com/maticnetwork/polygonmesh/archive/refs/heads/gh-pages.zip)
 
-Last tested on: 2022-05-07
+Last tested on: 2023-11-03
 
 > Requires node v14
 
