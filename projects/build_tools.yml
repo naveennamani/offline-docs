@@ -9,7 +9,7 @@
     - npx pnpm build
   direct_links: []
   output_dir: docs/dist
-  last_tested: 2022-10-08
+  last_tested: 2023-11-03
   note: ""
   license: ""
 - name: vite
@@ -22,6 +22,6 @@
     - npx pnpm i --store=node_modules/.pnpm-store && npm run ci-docs
   direct_links: []
   output_dir: vite/docs/.vitepress/dist
-  last_tested: 2022-04-23
+  last_tested: 2023-11-03
   note: null
   license: null

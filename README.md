@@ -410,7 +410,7 @@ cd ..
 tar czf "Astro.tar.gz" docs/dist
 ```
 
-Last tested on: 2022-10-08
+Last tested on: 2023-11-03
 
 </details>
 
@@ -436,7 +436,7 @@ cd ..
 tar czf "vite.tar.gz" vite/docs/.vitepress/dist
 ```
 
-Last tested on: 2022-04-23
+Last tested on: 2023-11-03
 
 </details>
 
