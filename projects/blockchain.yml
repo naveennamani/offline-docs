@@ -19,14 +19,19 @@
   repo: https://github.com/NomicFoundation/hardhat
   repo_branch: null
   commands:
-    - yarn install
+    - yarn --frozen-lockfile
     - cd docs/
-    - sh build-site.sh
+    - yarn
+    - yarn add sharp
+    - "sed -i 's|images: {|images: {\\nloader: \"imgix\",
+      path:\"localhost:8000/\",\\n|g' hardhat/docs/next.config.js"
+    - yarn build
+    - npx next export
     - cd ..
   direct_links: []
-  output_dir: hardhat/docs/.vuepress/dist
-  last_tested: 2022-04-15
-  note: null
+  output_dir: hardhat/docs/out
+  last_tested: 2023-11-03
+  note: Serve with `npx serve -p 8000`. Images only work locally when running on port 8000.
   license: null
 - name: matic.js
   website: https://maticnetwork.github.io/matic.js/
@@ -35,6 +40,8 @@
   repo: https://github.com/maticnetwork/matic.js
   repo_branch: docs
   commands:
+    - nvm install 14
+    - nvm use 14
     - npm ci
     - npm run deploy
   direct_links:
