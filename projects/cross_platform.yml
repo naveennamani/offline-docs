@@ -8,7 +8,7 @@
     - yarn build
   direct_links: []
   output_dir: electronjs.org-new/build
-  last_tested: 2022-10-19
+  last_tested: 2023-11-03
   note: ""
   license: Apache-2.0
 - name: React Native
@@ -23,7 +23,7 @@
     - cd ..
   direct_links: []
   output_dir: react-native-website/website/build
-  last_tested: 2022-05-01
+  last_tested: 2023-11-03
   note: null
   license: null
 - name: tauri
@@ -37,6 +37,6 @@
     - yarn build
   direct_links: []
   output_dir: tauri-docs/build
-  last_tested: 2022-05-07
+  last_tested: 2023-11-03
   note: null
   license: null

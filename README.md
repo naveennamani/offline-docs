@@ -466,7 +466,7 @@ cd ..
 tar czf "Electron.tar.gz" electronjs.org-new/build
 ```
 
-Last tested on: 2022-10-19
+Last tested on: 2023-11-03
 
 </details>
 
@@ -494,7 +494,7 @@ cd ..
 tar czf "React Native.tar.gz" react-native-website/website/build
 ```
 
-Last tested on: 2022-05-01
+Last tested on: 2023-11-03
 
 </details>
 
@@ -520,7 +520,7 @@ cd ..
 tar czf "tauri.tar.gz" tauri-docs/build
 ```
 
-Last tested on: 2022-05-07
+Last tested on: 2023-11-03
 
 </details>
 
